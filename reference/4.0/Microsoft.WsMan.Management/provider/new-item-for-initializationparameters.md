@@ -13,7 +13,6 @@ Creates a new item.
 
 ```
 New-Item [-ParamName <string>] [-ParamValue <string>] [-Confirm] [-WhatIf] [<CommonParameters>]
-
 ```
 
 ## Description
@@ -87,7 +86,6 @@ New-Item [-ParamName <string>] [-ParamValue <string>] [-Confirm] [-WhatIf] [<Com
 C:\PS>New-Item -Path WSMan:\localhost\Plugin\TestPlugin\InitializationParameters -ParamName testparametername -ParamValue testparametervalue
 
 This command creates an Initialization parameter named testparametername in the InitializationParameters directory.
-
 ```
 
 ## See Also

@@ -504,7 +504,7 @@ generates an error if the script returns "false" or if the script throws an
 exception.
 
 When you use the **ValidateScript** attribute, the value that is being
-validated is mapped to the \$_ variable. You can use the \$_ variable to refer
+validated is mapped to the \$<em> variable. You can use the \$</em> variable to refer
 to the value in the script.
 
 In the following example, the value of the **EventDate** parameter must be

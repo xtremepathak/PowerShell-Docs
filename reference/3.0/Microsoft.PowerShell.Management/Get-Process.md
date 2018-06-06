@@ -334,10 +334,10 @@ If you use the Module parameter (without the FileVersionInfo parameter), it retu
   - PM(K): The amount of pageable memory that the process is using, in kilobytes.
 
   - WS(K): The size of the working set of the process, in kilobytes.
-The working set consists of the pages of memory that were recently referenced by the process.
+  The working set consists of the pages of memory that were recently referenced by the process.
 
   - VM(M): The amount of virtual memory that the process is using, in megabytes.
-Virtual memory includes storage in the paging files on disk.
+  Virtual memory includes storage in the paging files on disk.
 
   - CPU(s): The amount of processor time that the process has used on all processors, in seconds.
 
@@ -348,7 +348,7 @@ Virtual memory includes storage in the paging files on disk.
   For explanations of the concepts related to processes, see the Glossary in Help and Support Center and the Help for Task Manager.
 
 * You can also use the built-in alternate views of the processes available with Format-Table, such as "StartTime" and "Priority", and you can design your own views. For more information, see T:Microsoft.PowerShell.Commands.Format-Table.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Debug-Process](Debug-Process.md)
 

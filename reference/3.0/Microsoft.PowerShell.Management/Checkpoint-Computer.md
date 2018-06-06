@@ -89,8 +89,8 @@ This cmdlet does not generate any output.
 * Beginning in Windows 8, **Checkpoint-Computer** cannot create more than one system restore point each day. If you try to create a new restore point before the 24-hour period has elapsed, Windows PowerShell generates the following error:
 
   `"A new system restore point cannot be created because one has already been created within the past 24 hours.
-Please try again later.`
-## RELATED LINKS
+  Please try again later.`
+  ## RELATED LINKS
 
 [Disable-ComputerRestore](Disable-ComputerRestore.md)
 

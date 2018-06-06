@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  12/01/2017
 schema:  2.0.0
 locale:  en-us
@@ -138,7 +138,6 @@ Handles NPM(K) PM(K)  WS(K) VM(M) CPU(s)   Id ProcessName MachineName
 920     38 97560 114532   576        2648 PowerShell  Server02
 192      6 24132  32028   140        3020 PowerShell  Server01
 438     26 48436  59132   565        4796 PowerShell  Server02
-
 ```
 
 # DESERIALIZED OBJECTS

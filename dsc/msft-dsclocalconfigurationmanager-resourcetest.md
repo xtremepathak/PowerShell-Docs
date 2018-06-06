@@ -47,9 +47,9 @@ This is a static method.
 
 ## Requirements
 ------------
->**MOF:** DscCore.mof
-
->**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
+> **MOF:** DscCore.mof
+> 
+> **Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
 
 
 ## See also

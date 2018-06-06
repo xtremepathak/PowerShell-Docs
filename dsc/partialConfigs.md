@@ -383,7 +383,6 @@ Configuration ServiceAccountConfig
     }
 }
 ServiceAccountConfig
-
 ```
 ## Example SharePointConfig Partial Configuration
 ```powershell
@@ -409,7 +408,7 @@ Configuration SharePointConfig
 }
 SharePointConfig
 ```
-##See Also
+## See Also
 
 **Concepts**
 [Windows PowerShell Desired State Configuration Pull Servers](pullServer.md)

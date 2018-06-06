@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -73,7 +73,6 @@ while ($true) {
   }
    1 / $i--
 }
-
 ```
 
 A Break statement can include a label. If you use the Break keyword with a

@@ -15,7 +15,6 @@ Creates new certificate stores in the LocalMachine store location.
 New-Item [-Path] <string[]> [-Name <string>] [-Confirm] [-WhatIf] [<CommonParameters>]
 
 New-Item [-Path] <string[]> [-Confirm] [-WhatIf] [<CommonParameters>]
-
 ```
 
 ## Description
@@ -99,7 +98,6 @@ Description
 This command uses the New-Item cmdlet to create the "TestStore" certificate store in the LocalMachine store location.
 
 The command returns a System.Security.Cryptography.X509Certificates.X509Store that represents the new certificate store.
-
 ```
 
 ## Example 2
@@ -112,7 +110,6 @@ Name : TestStore
 Description
 -----------
 This command uses the New-Item cmdlet to create the "TestStore" certificate store in the LocalMachine store location. It is identical to the previous command, but it uses the Name parameter to specify the store name, instead of the Path parameter. The effect is identical.
-
 ```
 
 ## Example 3
@@ -123,7 +120,6 @@ C:\PS>Invoke-Command -ComputerName Server01 { New-Item -Path Cert:\LocalMachine\
 Description
 -----------
 This command creates the TestStore certificate store on the Server01 remote computer. It uses the Invoke-Command cmdlet to run the New-Item command remotely.
-
 ```
 
 ## See Also

@@ -321,10 +321,10 @@ The following are some examples of this scenario.
 
 - The administrator created an endpoint with a restricted runspace called **PswaEndpoint**,and wants to restrict access to specific users. The administrator creates a group of users called **Level1Support**, and defines the following rule: **Level1Support,\*,PswaEndpoint**. The rule grants any users in the group **Level1Support** access to all computers with the **PswaEndpoint** configuration. Similarly, access can be restricted to a specific set of computers.
 
-- Some administrators provide certain users more access than others. For example, an administrator creates two user groups, **Admins** and **BasicSupport**. The administrator also creates an endpoint with a restricted runspace called **PswaEndpoint**, and defines the following two rules: **Admins,\*,\*** and **BasicSupport,\*,PswaEndpoint**. The first rule provides all users in the **Admin** group access to all computers, and the second rule provides all users in the **BasicSupport** group access only to those computers with **PswaEndpoint**.
+- Some administrators provide certain users more access than others. For example, an administrator creates two user groups, **Admins** and **BasicSupport**. The administrator also creates an endpoint with a restricted runspace called **PswaEndpoint**, and defines the following two rules: **Admins,\*,\\*** and **BasicSupport,\*,PswaEndpoint**. The first rule provides all users in the **Admin** group access to all computers, and the second rule provides all users in the **BasicSupport** group access only to those computers with **PswaEndpoint**.
 
 - An administrator has set up a private test environment, and wants to allow all authorized network users access to all computers on the network to which they typically have access, with access to all session configurations to which they typically have access. Because this is a private test environment, the administrator creates an authorization rule that is not secure.
-  - The administrator runs the cmdlet `Add-PswaAuthorizationRule * * *`, which uses the wildcard character **\*** to represent all users, all computers, and all configurations.
+  - The administrator runs the cmdlet `Add-PswaAuthorizationRule * * *`, which uses the wildcard character **\\*** to represent all users, all computers, and all configurations.
   - This rule is the equivalent of the following: `Add-PswaAuthorizationRule -UserName * -ComputerName * -ConfigurationName *`.
 
   >**Note**:
@@ -334,16 +334,16 @@ The following are some examples of this scenario.
   >by Windows PowerShell Web Access.
 
 - An administrator must allow users to connect to target computers in an
-environment that includes both workgroups and domains, where workgroup
-computers are occasionally used to connect to target computers in domains,
-and computers in domains are occasionally used to connect to target
-computers in workgroups. The administrator has a gateway server,
-*PswaServer*, in a workgroup; and target computer *srv1.contoso.com* is in
-a domain. User *Chris* is an authorized local user on both the workgroup
-gateway server and the target computer. His user name on the workgroup
-server is *chrisLocal*; and his user name on the target computer is
-*contoso\\chris*. To authorize access to srv1.contoso.com for Chris, the
-administrator adds the following rule.
+  environment that includes both workgroups and domains, where workgroup
+  computers are occasionally used to connect to target computers in domains,
+  and computers in domains are occasionally used to connect to target
+  computers in workgroups. The administrator has a gateway server,
+  *PswaServer*, in a workgroup; and target computer *srv1.contoso.com* is in
+  a domain. User *Chris* is an authorized local user on both the workgroup
+  gateway server and the target computer. His user name on the workgroup
+  server is *chrisLocal*; and his user name on the target computer is
+  *contoso\\chris*. To authorize access to srv1.contoso.com for Chris, the
+  administrator adds the following rule.
 
 ```powershell
 Add-PswaAuthorizationRule -userName PswaServer\chrisLocal -computerName srv1.contoso.com -configurationName Microsoft.PowerShell
@@ -363,18 +363,18 @@ been successful, and allowed by at least one authorization rule.
 
 2. Authentication on the target computer by using alternate credentials provided on the sign-in page, in the **Optional connection settings** area
 
-  >**Note**:
-  >
-  >If gateway and target computers are in different workgroups or domains, a
-trust relationship must be established between the two workgroup computers,
-the two domains, or between the workgroup and the domain. This relationship
-cannot be configured by using Windows PowerShell Web Access authorization
-rule cmdlets. Authorization rules do not define a trust relationship
-between computers; they can only authorize users to connect to specific
-target computers and session configurations. For more information about how
-to configure a trust relationship between different domains, see [Creating Domain
-and Forest Trusts](https://technet.microsoft.com/library/cc794775.aspx"). For more information about how to add workgroup
-computers to a trusted hosts list, see [Remote Management with Server Manager](https://technet.microsoft.com/library/dd759202.aspx)
+   >**Note**:
+   >
+   >If gateway and target computers are in different workgroups or domains, a
+   trust relationship must be established between the two workgroup computers,
+   the two domains, or between the workgroup and the domain. This relationship
+   cannot be configured by using Windows PowerShell Web Access authorization
+   rule cmdlets. Authorization rules do not define a trust relationship
+   between computers; they can only authorize users to connect to specific
+   target computers and session configurations. For more information about how
+   to configure a trust relationship between different domains, see [Creating Domain
+   and Forest Trusts](https://technet.microsoft.com/library/cc794775.aspx"). For more information about how to add workgroup
+   computers to a trusted hosts list, see [Remote Management with Server Manager](https://technet.microsoft.com/library/dd759202.aspx)
 
 ### Using a single set of authorization rules for multiple sites
 

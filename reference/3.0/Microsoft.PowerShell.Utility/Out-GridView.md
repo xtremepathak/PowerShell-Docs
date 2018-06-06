@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -297,7 +297,7 @@ You can send any object to **Out-GridView**.
   TAB               Moves the cursor from the Filter box to the Add criteria menu to the table and back.
 
   UP ARROW          Move up one row.
-Will move to column headers.
+  Will move to column headers.
 
   DOWN ARROW        Move down one row.
 
@@ -322,11 +322,11 @@ Will move to column headers.
   To hide or show a column:
 
   1.
-Right click any column header and click "Select Columns".
+  Right click any column header and click "Select Columns".
 
   2.
-In the "Select Columns" dialog box, use the arrow keys to move the columns between the "Selected columns" to the "Available columns" boxes.
-Only columns in the "Selected Columns" box appear in the grid view window.
+  In the "Select Columns" dialog box, use the arrow keys to move the columns between the "Selected columns" to the "Available columns" boxes.
+  Only columns in the "Selected Columns" box appear in the grid view window.
 
   To reorder columns:
 
@@ -335,11 +335,11 @@ Only columns in the "Selected Columns" box appear in the grid view window.
   - or-
 
   1.
-Right click any column header and click "Select Columns".
+  Right click any column header and click "Select Columns".
 
   2.
-In the "Select Columns" dialog box, use the "Move up" and "Move down" buttons to reorder the columns.
-Columns at the top of the list appear to the left of columns at the bottom of the list in the grid view window.
+  In the "Select Columns" dialog box, use the "Move up" and "Move down" buttons to reorder the columns.
+  Columns at the top of the list appear to the left of columns at the bottom of the list in the grid view window.
 
   How to Sort Table Data
 
@@ -348,8 +348,8 @@ Columns at the top of the list appear to the left of columns at the bottom of th
   - To sort the data, click a column header.
 
   - To change the sort order, click the column header again.
-Each time you click the same header, the sort order toggles between ascending to descending order.
-The current order is indicated by a triangle in the column header.
+  Each time you click the same header, the sort order toggles between ascending to descending order.
+  The current order is indicated by a triangle in the column header.
 
   How to Select Table Data
 
@@ -372,28 +372,28 @@ The current order is indicated by a triangle in the column header.
   - To copy one or more rows from the table, select the rows and then press CTRL+C.
 
   You can paste the data into any text or spreadsheet program.
-You cannot copy columns or parts of rows and you cannot copy the column header row.
+  You cannot copy columns or parts of rows and you cannot copy the column header row.
 
   How to Search in the Table  (Quick Filter)
 
   ---------------------------------
 
   Use the "Filter" box to search for data in the table.
-When you type in the box, only items that include the typed text appear in the table.
+  When you type in the box, only items that include the typed text appear in the table.
 
   - Search for text.
-To search for text in the table, in the "Filter" box, type the text to find.
+  To search for text in the table, in the "Filter" box, type the text to find.
 
   - Search for multiple words.
-To search for multiple words in the table, type the words separated by spaces.
-Out-GridView displays rows that include all of the words (logical AND).
+  To search for multiple words in the table, type the words separated by spaces.
+  Out-GridView displays rows that include all of the words (logical AND).
 
   - Search for literal phrases.
-To search for phrases that include spaces or special characters, enclose the phrase in quotation marks.
-Out-GridView displays rows that include an exact match for the phrase.
+  To search for phrases that include spaces or special characters, enclose the phrase in quotation marks.
+  Out-GridView displays rows that include an exact match for the phrase.
 
   - Search in columns.
-To search for text in one or more columns, use the following format:
+  To search for text in one or more columns, use the following format:
 
   \<column\>:\<text\> \[\<column\>:\<text\>\] ...
 
@@ -406,49 +406,49 @@ To search for text in one or more columns, use the following format:
   displayname:net  name:net
 
   - Turn off search.
-To display the entire table again, click the red X button in the top right corner of the "Filter" box or delete the text from the Filter box.
+  To display the entire table again, click the red X button in the top right corner of the "Filter" box or delete the text from the Filter box.
 
   Use Criteria to Filter the Table
 
   --------------------------------
 
   You can use rules or "criteria" to determine which items are displayed in the table.
-Items appear only when they satisfy all of the criteria that you establish.
-The available criteria are determined by the properties of the objects displayed in the grid view window and the .NET Framework types of those properties.
+  Items appear only when they satisfy all of the criteria that you establish.
+  The available criteria are determined by the properties of the objects displayed in the grid view window and the .NET Framework types of those properties.
 
   Each criterion has the following format:
 
   \<column\> \<operator\> \<value\>
 
   Criteria for different properties are connected by AND.
-Criteria for the same property are connected by OR.
-You cannot change the logical connectors.
+  Criteria for the same property are connected by OR.
+  You cannot change the logical connectors.
 
   The criteria only affects the display.
-It does not delete items from the table.
+  It does not delete items from the table.
 
   How to Add Criteria
 
   ---------------------------
 
   1.
-To display the "Add criteria" menu button, in the upper right corner of the window, click the "Expand" arrow.
+  To display the "Add criteria" menu button, in the upper right corner of the window, click the "Expand" arrow.
 
   2.
-Click the "Add Criteria" menu button.
+  Click the "Add Criteria" menu button.
 
   3.
-Click to select columns (properties).
-You can select one or many properties.
+  Click to select columns (properties).
+  You can select one or many properties.
 
   4.
-When you are finished selecting properties, click the Add button.
+  When you are finished selecting properties, click the Add button.
 
   5.
-To cancel the additions, click Cancel.
+  To cancel the additions, click Cancel.
 
   6.
-To add more criteria, click the Add Criteria button again.
+  To add more criteria, click the Add Criteria button again.
 
   How to Edit a Criterion
 
@@ -459,8 +459,8 @@ To add more criteria, click the Add Criteria button again.
   operator from the drop-down list.
 
   - To enter or change a value, type a value in the value box.
-If you enter a value that is not valid, a circular X icon appears.
-To remove it, change the value.
+  If you enter a value that is not valid, a circular X icon appears.
+  To remove it, change the value.
 
   - To create an OR statement, add a criteria with the same property.
 
@@ -471,4 +471,4 @@ To remove it, change the value.
   - To delete selected criteria, click the red X beside each criterion.
 
   - To delete all criteria, click the "Clear All" button.
-## RELATED LINKS
+    ## RELATED LINKS

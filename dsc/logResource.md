@@ -27,6 +27,7 @@ See the following article.
 [Where are DSC Event Logs?](https://msdn.microsoft.com/en-us/powershell/dsc/troubleshooting#where-are-dsc-event-logs)
 
 ## Properties
+
 |  Property  |  Description   |
 |---|---|
 | Message| Indicates the message you want to write to the Microsoft-Windows-Desired State Configuration/Analytic event log.|

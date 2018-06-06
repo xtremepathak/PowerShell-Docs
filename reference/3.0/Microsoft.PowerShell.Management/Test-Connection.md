@@ -370,7 +370,7 @@ Otherwise, this cmdlet returns a Win32_PingStatus object for each ping.
 ## NOTES
 * This cmdlet uses the Win32_PingStatus class. A "get-wmiobject win32_pingstatus" command is equivalent to a Test-Connection command.
 * The Source parameter set was introduced in Windows PowerShell 3.0.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Add-Computer](Add-Computer.md)
 

@@ -400,7 +400,7 @@ Specifies the path to the files to search.
 Wildcards are permitted.
 The default location is the local directory.
 
-Specify files in the directory, such as log1.txt, *.doc, or *.*.
+Specify files in the directory, such as log1.txt, <em>.doc, or *.</em>.
 If you specify only a directory, the command fails.
 
 ```yaml

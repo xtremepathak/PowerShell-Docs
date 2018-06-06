@@ -14,7 +14,6 @@ Gets the files and folders in a file system drive.
 
 ```
 Get-ChildItem [-Attributes <FileAttributes]>] [-Directory] [-File] [-Force] [-Hidden] [-ReadOnly] [-System] [-UseTransaction] [<CommonParameters>]
-
 ```
 
 ## Description
@@ -196,7 +195,6 @@ C:\PS>Get-ChildItem
 Description
 -----------
 This command gets the files and subdirectories in the current directory. If the current directory does not have child items, the command does not return any results.
-
 ```
 
 ## Example 2
@@ -207,7 +205,6 @@ C:\PS>Get-Childitem -System -File -Recurse
 Description
 -----------
 This command gets system files in the current directory and its subdirectories.
-
 ```
 
 ## Example 3
@@ -220,7 +217,6 @@ C:\PS> dir -att !d,!d+h
 Description
 -----------
 These command get all files, including hidden files, in the current directory, but exclude subdirectories. The second command uses aliases and abbreviations, but has the same effect as the first.
-
 ```
 
 ## Example 4
@@ -231,7 +227,6 @@ C:\PS>dir -ad
 Description
 -----------
 This command gets the subdirectories in the current directory. It uses the "dir" alias of the Get-ChildItem cmdlet and the "ad" alias of the Directory parameter.
-
 ```
 
 ## Example 5
@@ -242,7 +237,6 @@ C:\PS>Get-ChildItem -File -Attributes !ReadOnly -path C:\ps-test
 Description
 -----------
 This command gets read-write files in the C:\ps-test directory.
-
 ```
 
 ## Example 6
@@ -255,7 +249,6 @@ Description
 This command gets all of the .txt files in the current directory and its subdirectories.
 
 The dot (.) represents the current directory. The Include parameter specifies the file name extension. The Recurse parameter directs Windows PowerShell to search for objects recursively, and it indicates that the subject of the command is the specified directory and its contents. The Force parameter adds hidden files to the display.
-
 ```
 
 ## Example 7
@@ -266,7 +259,6 @@ C:\PS>get-childitem c:\windows\logs\* -include *.txt -exclude A*
 Description
 -----------
 This command gets the .txt files in the Logs subdirectory, except for those whose names start with the letter A. It uses the wildcard character (*) to indicate the contents of the Logs subdirectory, not the directory container. Because the command does not include the Recurse parameter, Get-ChildItem does not include the contents of the current directory automatically; you need to specify it.
-
 ```
 
 ## Example 8
@@ -277,7 +269,6 @@ C:\PS>get-childitem -name
 Description
 -----------
 This command retrieves only the names of items in the current directory.
-
 ```
 
 ## See Also

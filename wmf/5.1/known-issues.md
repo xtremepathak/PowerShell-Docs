@@ -25,7 +25,7 @@ In this release, there are two issues you should be aware of when using Pester o
 
 ## DSC after uninstall WMF
 * Uninstalling WMF does not delete DSC MOF documents from the configuration folder. DSC won't work properly if the MOF documents contain newer properties which are not available on the older systems. In this case, run the following script from elevated PowerShell console to to clean up the DSC states.
- ```powershell
+  ```powershell
     $PreviousDSCStates = @("$env:windir\system32\configuration\*.mof",
             "$env:windir\system32\configuration\*.mof.checksum",
             "$env:windir\system32\configuration\PartialConfiguration\*.mof",
@@ -33,7 +33,7 @@ In this release, there are two issues you should be aware of when using Pester o
            )
 
     $PreviousDSCStates | Remove-Item -ErrorAction SilentlyContinue -Verbose
- ```
+  ```
 
 ## JEA Virtual Accounts
 JEA endpoints and session configurations configured to use virtual accounts in WMF 5.0 will not be configured to use a virtual account after upgrading to WMF 5.1.

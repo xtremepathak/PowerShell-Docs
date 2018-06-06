@@ -20,7 +20,6 @@ nxGroup <string> #ResourceName
     [ MembersToExclude = <string[]> ]
     [ DependsOn = <string[]> ]
 }
-
 ```
 
 ## Properties

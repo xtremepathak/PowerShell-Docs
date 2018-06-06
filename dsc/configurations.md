@@ -14,19 +14,18 @@ To define a configuration, you use the PowerShell keyword **Configuration**.
 ```powershell
 Configuration MyDscConfiguration {
 
-	Node "TEST-PC1" {
-		WindowsFeature MyFeatureInstance {
-			Ensure = "Present"
-			Name =	"RSAT"
-		}
-		WindowsFeature My2ndFeatureInstance {
-			Ensure = "Present"
-			Name = "Bitlocker"
-		}
-	}
+    Node "TEST-PC1" {
+        WindowsFeature MyFeatureInstance {
+            Ensure = "Present"
+            Name =  "RSAT"
+        }
+        WindowsFeature My2ndFeatureInstance {
+            Ensure = "Present"
+            Name = "Bitlocker"
+        }
+    }
 }
 MyDscConfiguration
-
 ```
 
 Save the script as a .ps1 file.
@@ -45,22 +44,21 @@ target computer in the configuration, you could add a parameter for the node nam
 ```powershell
 Configuration MyDscConfiguration {
 
-	param(
+    param(
         [string[]]$ComputerName="localhost"
     )
-	Node $ComputerName {
-		WindowsFeature MyFeatureInstance {
-			Ensure = "Present"
-			Name =	"RSAT"
-		}
-		WindowsFeature My2ndFeatureInstance {
-			Ensure = "Present"
-			Name = "Bitlocker"
-		}
-	}
+    Node $ComputerName {
+        WindowsFeature MyFeatureInstance {
+            Ensure = "Present"
+            Name =  "RSAT"
+        }
+        WindowsFeature My2ndFeatureInstance {
+            Ensure = "Present"
+            Name = "Bitlocker"
+        }
+    }
 }
 MyDscConfiguration -ComputerName $ComputerName
-
 ```
 
 In this example, you specify the name of the node by passing it as the **ComputerName** parameter when you compile the configuration. The name defaults to "localhost".
@@ -81,7 +79,7 @@ When you call the configuration, it:
 - Resolves all variables
 - Creates a folder in the current directory with the same name as the configuration.
 - Creates a file named _NodeName_.mof in the new directory, where _NodeName_ is the name of the target node of the configuration.
-	If there are more than one nodes, a MOF file will be created for each node.
+    If there are more than one nodes, a MOF file will be created for each node.
 
 >**Note**: The MOF file contains all of the configuration information for the target node. Because of this, it’s important to keep it secure.
 >For more information, see [Securing the MOF file](secureMOF.md).
@@ -137,7 +135,6 @@ Configuration DependsOnExample {
         }
     }
 }
-
 ```
 
 ## Using new resources in Your configuration

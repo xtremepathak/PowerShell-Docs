@@ -359,7 +359,7 @@ Valid values are:
 
 - **PasswordPass**: Sets the machine password to the value of the **Credential** (DomainCredential) parameter after performing an unsecured join. This option also indicates that the value of the **Credential** (DomainCredential) parameter is a machine password, not a user password. This option is valid only when the UnsecuredJoin option is specified.
 
- -- **JoinWithNewName**: Renames the computer name in the new domain to the name specified by the **NewName** parameter. When you use the **NewName** parameter, this option is set automatically. This option is designed to be used with the Rename-Computer cmdlet. If you use the **Rename-Computer** cmdlet to rename the computer, but do not restart the computer to make the change effective, you can use this parameter to join the computer to a domain with its new name.
+  -- **JoinWithNewName**: Renames the computer name in the new domain to the name specified by the **NewName** parameter. When you use the **NewName** parameter, this option is set automatically. This option is designed to be used with the Rename-Computer cmdlet. If you use the **Rename-Computer** cmdlet to rename the computer, but do not restart the computer to make the change effective, you can use this parameter to join the computer to a domain with its new name.
 
 - **JoinReadOnly**: Uses an existing machine account to join the computer to a read-only domain controller. The machine account must be added to the allowed list for password replication policy and the account password must be replicated to the read-only domain controller prior to the join operation.
 
@@ -438,7 +438,7 @@ When you use the **PassThru** parameter, **Add-Computer** returns a ComputerChan
 Otherwise, this cmdlet does not generate any output.
 ## NOTES
 * In Windows PowerShell 2.0, the **Server** parameter of **Add-Computer** fails even when the server is present. In Windows PowerShell 3.0, the implementation of the **Server** parameter is changed so that it works reliably.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Checkpoint-Computer](Checkpoint-Computer.md)
 

@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -383,14 +383,14 @@ Otherwise, it returns a GroupInfo object.
 - You can also use the GroupBy parameter of the formatting cmdlets (such as Format-Table \[m2\] and Format-List \[m2\]) to group objects. Unlike Group-Object, which creates a single table with a row for each property value, the GroupBy parameters create a table for each property value with a row for each item that has the property value.
 
   Group-Object does not require that the objects being grouped be of the same Microsoft .NET Framework type.
-When grouping objects of different .NET Framework types, Group-Object uses the following rules:
+  When grouping objects of different .NET Framework types, Group-Object uses the following rules:
 
   - Same Property Names and Types: If the objects have a property with the specified name, and the property values have the same .NET Framework type, the property values are grouped by using the same rules that would be used for objects of the same type.
 
   - Same Property Names, Different Types: If the objects have a property with the specified name, but the property values have a different .NET Framework type in different objects, Group-Object uses the .NET Framework type of the first occurrence of the property as the .NET Framework type for that property group.
-When an object has a property with a different type, the property value is converted to the type for that group.
-If the type conversion fails, the object is not included in the group.
+    When an object has a property with a different type, the property value is converted to the type for that group.
+    If the type conversion fails, the object is not included in the group.
 
   - Missing Properties: Objects that do not have a specified property are considered ungroupable.
-Ungroupable objects appear in the final GroupInfo object output in a group named AutomationNull.Value.
-## RELATED LINKS
+    Ungroupable objects appear in the final GroupInfo object output in a group named AutomationNull.Value.
+    ## RELATED LINKS

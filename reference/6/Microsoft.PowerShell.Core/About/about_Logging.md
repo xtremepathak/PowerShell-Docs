@@ -88,16 +88,16 @@ for syslog.  However, it is possible to redirect the entries to a custom
 file.
 
 * Create a conf for PowerShell log configuration and provide a number that
-is less than 50 (for `50-default.conf`), such as `40-powershell.conf`. The
-file should be placed under `/etc/rsyslog.d`.
+  is less than 50 (for `50-default.conf`), such as `40-powershell.conf`. The
+  file should be placed under `/etc/rsyslog.d`.
 
 * Add the following entry to the file
-```
-:syslogtag, contains, "powershell[" /var/log/powershell.log
-& stop
-```
+  ```
+  :syslogtag, contains, "powershell[" /var/log/powershell.log
+  & stop
+  ```
 * Ensure `/etc/rsyslog.conf` includes the new file. Often, it will have
-a generic include statement that looks like following:
+  a generic include statement that looks like following:
 
 `$IncludeCnofig /etc/rsyslog.d/*.conf`
 
@@ -109,13 +109,13 @@ If it does not, you will need to add an include statement manually.
   -rw-r--r-- 1 root root   67 Nov 28 12:51 40-powershell.conf
   ```
 
-- Set ownership to root
+* Set ownership to root
 
   ```
   chown root:root /etc/rsyslog.d/40-powershell.conf
   ```
 
-- Set access permissions - root has read/write, users have read.
+* Set access permissions - root has read/write, users have read.
 
   ```
   chmod 644 /etc/rsyslog.d/40-powershell.conf

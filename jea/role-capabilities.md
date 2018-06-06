@@ -68,7 +68,6 @@ For these cases, you can restrict which parameters are exposed from the cmdlet o
 ```powershell
 
 VisibleCmdlets = @{ Name = 'Restart-Computer'; Parameters = @{ Name = 'Name' }}
-
 ```
 
 In more advanced scenarios, you may also need to restrict which values someone can supply to these parameters.

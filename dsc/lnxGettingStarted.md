@@ -117,10 +117,10 @@ $Sess=New-CimSession -Credential:$credential -ComputerName:$Node -Port:5986 -Aut
 ```
 
 > **Note**:
-* For “Push” mode, the user credential must be the root user on the Linux computer.
-* Only SSL/TLS connections are supported for DSC for Linux, the New-CimSession must be used with the –UseSSL parameter set to $true.
-* The SSL certificate used by OMI (for DSC) is specified in the file: `/opt/omi/etc/omiserver.conf` with the properties: pemfile and keyfile.
-If this certificate is not trusted by the Windows computer that you are running the [New-CimSession](http://go.microsoft.com/fwlink/?LinkId=227967) cmdlet on, you can choose to ignore certificate validation with the CIMSession Options: `-SkipCACheck:$true -SkipCNCheck:$true -SkipRevocationCheck:$true`
+> * For “Push” mode, the user credential must be the root user on the Linux computer.
+> * Only SSL/TLS connections are supported for DSC for Linux, the New-CimSession must be used with the –UseSSL parameter set to $true.
+> * The SSL certificate used by OMI (for DSC) is specified in the file: `/opt/omi/etc/omiserver.conf` with the properties: pemfile and keyfile.
+> If this certificate is not trusted by the Windows computer that you are running the [New-CimSession](http://go.microsoft.com/fwlink/?LinkId=227967) cmdlet on, you can choose to ignore certificate validation with the CIMSession Options: `-SkipCACheck:$true -SkipCNCheck:$true -SkipRevocationCheck:$true`
 
 Run the following command to push the DSC configuration to the Linux node.
 
@@ -135,37 +135,37 @@ Configurations can be distributed to a Linux computer with a pull server, just l
 DSC for Linux includes scripts to work with configuration from the local Linux computer. These scripts are locate in `/opt/microsoft/dsc/Scripts` and include the following:
 * GetDscConfiguration.py
 
- Returns the current configuration applied to the computer. Similar to the Windows PowerShell cmdlet Get-DscConfiguration cmdlet.
+  Returns the current configuration applied to the computer. Similar to the Windows PowerShell cmdlet Get-DscConfiguration cmdlet.
 
 `# sudo ./GetDscConfiguration.py`
 
 * GetDscLocalConfigurationManager.py
 
- Returns the current meta-configuration applied to the computer. Similar to the cmdlet [Get-DSCLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx) cmdlet.
+  Returns the current meta-configuration applied to the computer. Similar to the cmdlet [Get-DSCLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn407378.aspx) cmdlet.
 
 `# sudo ./GetDscLocalConfigurationManager.py`
 
 * InstallModule.py
 
- Installs a custom DSC resource module. Requires the path to a .zip file containing the module shared object library and schema MOF files.
+  Installs a custom DSC resource module. Requires the path to a .zip file containing the module shared object library and schema MOF files.
 
 `# sudo ./InstallModule.py /tmp/cnx_Resource.zip`
 
 * RemoveModule.py
 
- Removes a custom DSC resource module. Requires the name of the module to remove.
+  Removes a custom DSC resource module. Requires the name of the module to remove.
 
 `# sudo ./RemoveModule.py cnx_Resource`
 
 * StartDscLocalConfigurationManager.py
 
- Applies a configuration MOF file to the computer. Similar to the [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet. Requires the path to the configuration MOF to apply.
+  Applies a configuration MOF file to the computer. Similar to the [Start-DscConfiguration](https://technet.microsoft.com/en-us/library/dn521623.aspx) cmdlet. Requires the path to the configuration MOF to apply.
 
 `# sudo ./StartDscLocalConfigurationManager.py –configurationmof /tmp/localhost.mof`
 
 * SetDscLocalConfigurationManager.py
 
- Applies a Meta Configuration MOF file to the computer. Similar to the [Set-DSCLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn521621.aspx) cmdlet. Requires the path to the Meta Configuration MOF to apply.
+  Applies a Meta Configuration MOF file to the computer. Similar to the [Set-DSCLocalConfigurationManager](https://technet.microsoft.com/en-us/library/dn521621.aspx) cmdlet. Requires the path to the Meta Configuration MOF to apply.
 
 `# sudo ./SetDscLocalConfigurationManager.py –configurationmof /tmp/localhost.meta.mof`
 

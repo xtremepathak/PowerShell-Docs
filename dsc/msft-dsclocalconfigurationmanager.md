@@ -59,6 +59,6 @@ The **MSFT_DSCLocalConfigurationManager** class has these methods.
 
 ## Requirements
 ------------
->**MOF:** DscCore.mof
-
->**Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration
+> **MOF:** DscCore.mof
+> 
+> **Namespace**: Root\Microsoft\Windows\DesiredStateConfiguration

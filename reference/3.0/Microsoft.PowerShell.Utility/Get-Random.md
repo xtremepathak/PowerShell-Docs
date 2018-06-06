@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -357,4 +357,4 @@ You can pipe one or more objects to **Get-Random**.
 
 - **Get-Random** sets a default seed for each session based on the system time clock when the session starts.
 - Beginning in Windows PowerShell 3.0, **Get-Random** supports 64-bit integers. In Windows PowerShell 2.0, all values are cast to System.Int32.
-## RELATED LINKS
+  ## RELATED LINKS

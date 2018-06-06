@@ -268,7 +268,7 @@ When you use the **PassThru** parameter, **Remove-Computer** returns a **Compute
 Otherwise, this cmdlet does not generate any output.
 ## NOTES
 * This cmdlet does not remove computers from workgroups.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Add-Computer](Add-Computer.md)
 

@@ -166,10 +166,10 @@ To set up a client that pulls configurations and/or resources from an SMB share,
 
 For more information about configuring the LCM, see [Setting up a pull client using configuration ID](pullClientConfigID.md).
 
->**Note:** For simplicity, this example uses the **PSDscAllowPlainTextPassword** to allow passing a plaintext password to the **Credential** parameter. For information
->about passing credentials more securely, see [Credentials Options in Configuration Data](configDataCredentials.md).
-
->**Note:** You must specify a **ConfigurationID** in the **Settings** block of a metaconfiguration for an SMB pull server, even if you are only pulling resources.
+> **Note:** For simplicity, this example uses the **PSDscAllowPlainTextPassword** to allow passing a plaintext password to the **Credential** parameter. For information
+> about passing credentials more securely, see [Credentials Options in Configuration Data](configDataCredentials.md).
+> 
+> **Note:** You must specify a **ConfigurationID** in the **Settings** block of a metaconfiguration for an SMB pull server, even if you are only pulling resources.
 
 ```powershell
 $secpasswd = ConvertTo-SecureString “Pass1Word” -AsPlainText -Force

@@ -648,7 +648,7 @@ void Ding()
   [PSConsoleUtilities.PSConsoleReadLine]::TryGetArgAsInt($arg,
     [ref]$numericArg, 1)
   ```
-## POWERSHELL COMPATIBILITY
+  ## POWERSHELL COMPATIBILITY
 
 PSReadline requires PowerShell 3.0 or newer, and the console host. It
 does not work in PowerShell ISE.

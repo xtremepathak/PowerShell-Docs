@@ -40,8 +40,8 @@ PS C:\> $pwd_secure_string = Read-Host "Enter a Password" -AsSecureString
 ```
 
 This command displays the string "Enter a Password:" as a prompt.
-As a value is being entered, asterisks (*) appear on the console in place of the input.
-When the Enter key is pressed, the value is stored as a **SecureString** object in the $pwd_secure_string variable.
+As a value is being entered, asterisks (<em>) appear on the console in place of the input.
+When the Enter key is pressed, the value is stored as a **SecureString</em>* object in the $pwd_secure_string variable.
 
 ## PARAMETERS
 

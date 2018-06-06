@@ -174,11 +174,11 @@ The following table lists commands that are known not to work in PowerShell on L
 </tr>
 <tr>
 <td>Wait-Process
-<td>Available, doesn't work properly. <td>For example `Start-Process gvim -PassThru | Wait-Process` doesn't work; it fails to wait for the process.
+<td>Available, doesn&#39;t work properly. <td>For example <code>Start-Process gvim -PassThru | Wait-Process</code> doesn&#39;t work; it fails to wait for the process.
 </tr>
 <tr>
 <td>Register-PSSessionConfiguration, Unregister-PSSessionConfiguration, Get-PSSessionConfiguration
-<td>Available but doesn't work.
+<td>Available but doesn&#39;t work.
 <td>Writes an error message indicating that the commands are not working. These should be fixed in a future release.
 </tr>
 <tr>
@@ -188,12 +188,12 @@ The following table lists commands that are known not to work in PowerShell on L
 </tr>
 <tr>
 <td>Set-ExecutionPolicy
-<td>Available but doesn't work.
-<td>Returns a message saying not supported on this platform. Execution policy is a user-focused "safety belt" that helps prevent the user from making expensive mistakes. It is not a security boundary.
+<td>Available but doesn&#39;t work.
+<td>Returns a message saying not supported on this platform. Execution policy is a user-focused &quot;safety belt&quot; that helps prevent the user from making expensive mistakes. It is not a security boundary.
 </tr>
 <tr>
 <td>New-PSSessionOption, New-PSTransportOption
-<td>Available but New-PSSession doesn't work.
+<td>Available but New-PSSession doesn&#39;t work.
 <td>New-PSSessionOption and New-PSTransportOption are not currently verified to work now that New-PSSession works.
 </tr>
 </table>

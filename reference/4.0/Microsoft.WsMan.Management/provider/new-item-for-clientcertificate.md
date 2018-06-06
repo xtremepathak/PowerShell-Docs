@@ -13,7 +13,6 @@ Creates a new item. In this location, the [New-Item](../../Microsoft.PowerShell.
 
 ```
 New-Item -Issuer <string> -Subject <string> -ResourceURI <Uri> -Credential <PSCredential> [-Confirm] [-WhatIf] [<CommonParameters>]
-
 ```
 
 ## Description
@@ -120,7 +119,6 @@ C:\PS>$cred = Get-Credential
 C:\PS>New-Item -Path WSMan:\localhost\ClientCertificate -Issuer 1b3fd224d66c6413fe20d21e38b304226d192dfe -URI wmicimv2/* -Credential $cred;
 
 This command creates ClientCertificate entry that can be used by the WS-Management client. The new ClientCertificate will show up under the ClientCertificate directory as ClientCertificate_1234567890. All of the parameters are mandatory. The Issuer needs to be thumbprint of the issuers certificate.
-
 ```
 
 ## See Also

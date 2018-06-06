@@ -188,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationBase
-Specifies the path of the assembly file (*.dll) that is specified in the value of the *AssemblyName* parameter.
+Specifies the path of the assembly file (<em>.dll) that is specified in the value of the *AssemblyName</em> parameter.
 
 ```yaml
 Type: String

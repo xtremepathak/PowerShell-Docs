@@ -106,7 +106,7 @@ d-----       12/10/2017   1:16 PM                Windows
 This command gets the items in the C: drive.
 The wildcard character (*) represents all the items in the container, not just the container.
 
-In Windows PowerShell, use a single asterisk (*) to get contents, instead of the traditional *.*.
+In Windows PowerShell, use a single asterisk (<em>) to get contents, instead of the traditional *.</em>.
 The format is interpreted literally, so *.* would not retrieve directories or file names without a dot.
 
 ### Example 5: Get a property in the specified directory
@@ -201,8 +201,8 @@ d-----         4/5/2017   4:34 PM                SoftwareDistribution.bak
 -a----        3/19/2017  12:28 AM          65536 twain_32.dll
 ```
 
-This command gets items in the Windows directory with names that include a dot (.), but do not begin with w*.
-This command works only when the path includes a wildcard character (*) to specify the contents of the item.
+This command gets items in the Windows directory with names that include a dot (.), but do not begin with w<em>.
+This command works only when the path includes a wildcard character (</em>) to specify the contents of the item.
 
 ## PARAMETERS
 

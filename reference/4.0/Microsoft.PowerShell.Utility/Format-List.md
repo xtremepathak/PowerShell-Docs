@@ -215,8 +215,8 @@ Sends errors through the pipeline.
 This parameter is rarely used, but can be used as a debugging aid when you are formatting expressions in a Format-List command, and the expressions do not appear to be working.
 The following shows an example of the results of adding the ShowError parameter with an expression.
 
-PS \> Get-Date | Format-List DayOfWeek,{ $_ / $null } -ShowError
-DayOfWeek  $_ / $null
+PS \> Get-Date | Format-List DayOfWeek,{ $<em> / $null } -ShowError
+DayOfWeek  $</em> / $null
 --------- ------------
 Wednesday
 

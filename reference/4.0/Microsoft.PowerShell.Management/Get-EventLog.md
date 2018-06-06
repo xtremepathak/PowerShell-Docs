@@ -387,7 +387,7 @@ Accept wildcard characters: True
 
 ### -UserName
 Gets only the events that are associated with the specified user names.
-Enter names or name patterns, such as User01, User*, or Domain01\User*.
+Enter names or name patterns, such as User01, User<em>, or Domain01\User</em>.
 Wildcards are permitted.
 
 ```yaml

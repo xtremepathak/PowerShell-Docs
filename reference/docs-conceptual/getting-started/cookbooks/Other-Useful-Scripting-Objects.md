@@ -57,10 +57,10 @@ $psOnlineHelp | Format-List
 
 ### Sample Output
 
-|||
-|-|-|
-|Key : Add-Computer|Value : http://go.microsoft.com/fwlink/p/?LinkID=135194|
-|Key : Add-Content|Value : http://go.microsoft.com/fwlink/p/?LinkID=113278|
+|                    |                                                         |
+|--------------------|---------------------------------------------------------|
+| Key : Add-Computer | Value : http://go.microsoft.com/fwlink/p/?LinkID=135194 |
+| Key : Add-Content  | Value : http://go.microsoft.com/fwlink/p/?LinkID=113278 |
 
  The following script adds an entry to the list.
 

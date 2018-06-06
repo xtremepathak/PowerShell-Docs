@@ -4,11 +4,11 @@ keywords:  dsc,powershell,configuration,setup
 title:  Configure a virtual machines at initial boot-up by using DSC
 ---
 
->Applies To: Windows PowerShell 5.0
-
->**Note:** The **DSCAutomationHostEnabled** registry key described in this topic is not available in PowerShell 4.0.
-For information on how to configure new virtual machines at initial boot-up in PowerShell 4.0, see
-[Want to Automatically Configure Your Machines Using DSC at Initial Boot-up?](https://blogs.msdn.microsoft.com/powershell/2014/02/28/want-to-automatically-configure-your-machines-using-dsc-at-initial-boot-up/)
+> Applies To: Windows PowerShell 5.0
+> 
+> **Note:** The **DSCAutomationHostEnabled** registry key described in this topic is not available in PowerShell 4.0.
+> For information on how to configure new virtual machines at initial boot-up in PowerShell 4.0, see
+> [Want to Automatically Configure Your Machines Using DSC at Initial Boot-up?](https://blogs.msdn.microsoft.com/powershell/2014/02/28/want-to-automatically-configure-your-machines-using-dsc-at-initial-boot-up/)
 
 # Configure a virtual machines at initial boot-up by using DSC
 
@@ -179,7 +179,7 @@ so set the value of this key to 0:
     reg load HKLM\Vhd E:\Windows\System32\Config\Software`
     ```
 
-3. Navigate to the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\*** by using the PowerShell Registry provider.
+3. Navigate to the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\\*** by using the PowerShell Registry provider.
 
     ```powershell
     Set-Location HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies`

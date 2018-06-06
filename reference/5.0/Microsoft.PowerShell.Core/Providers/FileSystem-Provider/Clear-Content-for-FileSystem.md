@@ -14,7 +14,6 @@ Deletes the contents of an item, but does not delete the item.
 
 ```
 Clear-Content [-Stream <string>] [<CommonParameters>]
-
 ```
 
 ## Description
@@ -76,7 +75,6 @@ The second command uses the Clear-Content cmdlet to clear the content.
 The third command repeats the first command. It verifies that the content is cleared, but the stream remains. If the stream were deleted, the command would generate an error.
 
 You can use a method like this one to clear the content of an alternate data stream. However, it is not the recommended way to eliminate security checks that block files that are downloaded from the Internet. If you verify that a downloaded file is safe, use the Unblock-File cmdlet.
-
 ```
 
 ## Example 2
@@ -87,7 +85,6 @@ C:\PS>Clear-Content ..\SmpUsers\*\init.txt
 Description
 -----------
 This command deletes all of the content from the "init.txt" files in all subdirectories of the SmpUsers directory. The files are not deleted, but they are empty.
-
 ```
 
 ## Example 3
@@ -98,7 +95,6 @@ C:\PS>Clear-Content -Path * -Filter *.log -Force
 Description
 -----------
 This command deletes the contents of all files in the current directory with the ".log" file name extension, including files with the read-only attribute. The asterisk (*) in the path represents all items in the current directory. The Force parameter makes the command effective on read-only files. Using a filter to restrict the command to files with the ".log" file name extension instead of specifying "*.log" in the path makes the operation faster.
-
 ```
 
 ## Example 4
@@ -109,7 +105,6 @@ C:\PS>Clear-Content c:\Temp\* -Include Smp* -Exclude *2* -WhatIf
 Description
 -----------
 This command requests a prediction of what would happen if you submitted the command: "clear-content c:\temp\* -include smp* -exclude *2*". The result lists the files that would be cleared; in this case, files in the Temp directory whose names begin with "Smp", unless the file names include a "2". To execute the command, run it again without the Whatif parameter.
-
 ```
 
 ## See Also

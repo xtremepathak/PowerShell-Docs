@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -122,7 +122,7 @@ This cmdlet does not return any output.
 ## NOTES
 
 - This cmdlet takes only the common parameters.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Connect-PSSession](Connect-PSSession.md)
 

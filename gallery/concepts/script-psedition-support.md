@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/12/2017
 contributor:  manikb
 keywords:  gallery,powershell,cmdlet,psget
@@ -56,7 +56,6 @@ Find-Script -Tag PSEditon_Desktop
 
 # Find scripts supported on PowerShell Core editions
 Find-Script -Tag PSEditon_Core
-
 ```
 
 ## More details

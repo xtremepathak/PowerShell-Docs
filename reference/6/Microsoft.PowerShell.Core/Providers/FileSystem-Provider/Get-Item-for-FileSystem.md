@@ -14,7 +14,6 @@ Gets files and folders.
 
 ```
 Get-Item [-Stream <string>] [<CommonParameters>]
-
 ```
 
 ## Description
@@ -67,7 +66,6 @@ Description
 This command gets all stream data from a file that was downloaded from the Internet. The Zone.Identifier stream identifies a file that originated on the Internet. The $DATA stream is the default.
 
 The Stream parameter is introduced in Windows PowerShell 3.0.
-
 ```
 
 ## Example 2
@@ -92,7 +90,6 @@ Description
 This command gets Zone.Identifier stream data from all files in the C:\ps-test directory. The command uses the Stream parameter to specify the alternate stream and he ErrorAction parameter with a value of SilentlyContinue to suppress non-terminating errors that are generated when a file has no alternate data streams.
 
 The Stream parameter is introduced in Windows PowerShell 3.0.
-
 ```
 
 ## Example 3
@@ -109,7 +106,6 @@ d----         7/26/2006  10:01 AM            ps-test
 Description
 -----------
 This command gets the current directory. The dot (.) represents the item at the current location (not its contents).
-
 ```
 
 ## Example 4
@@ -131,7 +127,6 @@ d----         7/26/2006   9:26 AM            Recs
 Description
 -----------
 This command gets the current directory of the C: drive. The object that is retrieved represents only the directory, not its contents.
-
 ```
 
 ## Example 5
@@ -144,7 +139,6 @@ Description
 This command gets the items in the C: drive. The wildcard character (*) represents all the items in the container, not just the container.
 
 In Windows PowerShell, use a single asterisk (*) to get contents, instead of the traditional "*.*". The format is interpreted literally, so "*.*" would not retrieve directories or file names without a dot.
-
 ```
 
 ## Example 6
@@ -155,7 +149,6 @@ C:\PS>(Get-Item C:\Windows).LastAccessTime
 Description
 -----------
 This command gets the LastAccessTime property of the C:\Windows directory. LastAccessTime is just one property of file system directories. To see all of the properties of a directory, type "(Get-Item <directory-name>) | Get-Member".
-
 ```
 
 ## Example 7
@@ -166,7 +159,6 @@ C:\PS>Get-Item C:\Windows\*.* -Exclude w*
 Description
 -----------
 This command gets items in the Windows directory with names that include a dot (.), but do not begin with w*. This command works only when the path includes a wildcard character (*) to specify the contents of the item.
-
 ```
 
 ## See Also

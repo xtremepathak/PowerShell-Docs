@@ -53,7 +53,7 @@ Moves certificates from one certificate store to another certificate store.
 Creates a Windows catalog file containing cryptographic hashes for files and folders in specified paths.
 
 
-###[New-Item-for-Certificate](Providers/New-Item-for-Certificate.md)
+### [New-Item-for-Certificate](Providers/New-Item-for-Certificate.md)
 Creates new certificate stores in the LocalMachine store location.
 
 

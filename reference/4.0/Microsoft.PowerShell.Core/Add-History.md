@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -149,19 +149,19 @@ Otherwise, this cmdlet does not generate any output.
 - The session history is a list of the commands entered during the session along with the ID. The session history represents the order of execution, the status, and the start and end times of the command. As you enter each command, Windows PowerShell adds it to the history so that you can reuse it.  For more information about the session history, see about_History.
 
   To specify the commands to add to the history, use the **InputObject** parameter.
-The **Add-History** command accepts only **HistoryInfo** objects, such as those returned for each command by the Get-History cmdlet.
-You cannot pass it a path and file name or a list of commands.
+  The **Add-History** command accepts only **HistoryInfo** objects, such as those returned for each command by the Get-History cmdlet.
+  You cannot pass it a path and file name or a list of commands.
 
   You can use the **InputObject** parameter to pass a file of HistoryInfo objects to **Add-History**.
-To do so, export the results of a Get-History command to a file by using the Export-Csv or Export-Clixml cmdlet and then import the file by using the Import-Csv or Import-Clixml cmdlets.
-You can then pass the file of imported HistoryInfo objects to **Add-History** through a pipeline or in a variable.
-For more information, see the examples.
+  To do so, export the results of a Get-History command to a file by using the Export-Csv or Export-Clixml cmdlet and then import the file by using the Import-Csv or Import-Clixml cmdlets.
+  You can then pass the file of imported HistoryInfo objects to **Add-History** through a pipeline or in a variable.
+  For more information, see the examples.
 
   The file of HistoryInfo objects that you pass to the **Add-History** cmdlet must include the type information, column headings, and all of the properties of the HistoryInfo objects.
-If you intend to pass the objects back to **Add-History**, do not use the **NoTypeInformation** parameter of the Export-Csv cmdlet and do not delete the type information, column headings, or any fields in the file.
+  If you intend to pass the objects back to **Add-History**, do not use the **NoTypeInformation** parameter of the Export-Csv cmdlet and do not delete the type information, column headings, or any fields in the file.
 
   To edit the session history, export the session to a CSV or XML file, edit the file, import the file, and use **Add-History** to append it to the current session history.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Clear-History](Clear-History.md)
 

@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -566,7 +566,7 @@ This  parameter configures the temporary connection that is created to run a **G
 
 The format of this string is:
 
-\<Transport\>://\<ComputerName\>:\<Port\>/\<ApplicationName\>****The default value is "http://localhost:5985/WSMAN".
+\<Transport\>://\<ComputerName\>:\<Port\>/\<ApplicationName\>****The default value is "<http://localhost:5985/WSMAN>".
 
 If you do not specify a ConnectionUri, you can use the **UseSSL**, **ComputerName**, **Port**, and **ApplicationName** parameters to specify the ConnectionURI values.
 Valid values for the Transport segment of the URI are HTTP and HTTPS.

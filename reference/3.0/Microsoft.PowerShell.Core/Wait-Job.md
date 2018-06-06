@@ -384,7 +384,7 @@ Wait-Job returns job objects that represent the completed jobs.
 If the wait ends because the value of the Timeout parameter is exceeded, Wait-Job does not return any objects.
 ## NOTES
 * By default, **Wait-Job** returns (terminates the wait) when jobs are in one of the following states: Completed, Failed, Stopped, Suspended, or Disconnected. To direct **Wait-Job** to continue waiting for **Suspended** and **Disconnected** jobs, use the **Force** parameter.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Get-Job](Get-Job.md)
 

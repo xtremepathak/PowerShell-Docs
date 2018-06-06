@@ -180,7 +180,7 @@ Tee-Object returns the object that it redirects.
 ## NOTES
 * You can also use the Out-File cmdlet or the redirection operator, both of which save the output in a file but do not send it down the pipeline.
 * Tee-Object uses Unicode encoding when it writes to files. As a result, the output might not be formatted properly in files with a different encoding. To specify the encoding, use the Out-File cmdlet.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Select-Object](Select-Object.md)
 

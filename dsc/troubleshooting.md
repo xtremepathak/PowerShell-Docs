@@ -27,19 +27,19 @@ A rich object is returned that includes high-level information about whether or 
 The following parameter set returns the status information for the last configuration run:
 
 ```powershell
-Get-DscConfigurationStatus 	[-CimSession <CimSession[]>]
-							[-ThrottleLimit <int>]
-							[-AsJob]
-							[<CommonParameters>]
+Get-DscConfigurationStatus  [-CimSession <CimSession[]>]
+                            [-ThrottleLimit <int>]
+                            [-AsJob]
+                            [<CommonParameters>]
 ```
 The following parameter set returns the status information for all previous configuration runs:
 
 ```powershell
-Get-DscConfigurationStatus 	-All
-							[-CimSession <CimSession[]>]
-							[-ThrottleLimit <int>]
-							[-AsJob]
-							[<CommonParameters>]
+Get-DscConfigurationStatus  -All
+                            [-CimSession <CimSession[]>]
+                            [-ThrottleLimit <int>]
+                            [-AsJob]
+                            [<CommonParameters>]
 ```
 
 ## Example
@@ -49,30 +49,30 @@ PS C:\> $Status = Get-DscConfigurationStatus
 
 PS C:\> $Status
 
-Status 		StartDate				Type			Mode	RebootRequested		NumberOfResources
-------		---------				----			----	---------------		-----------------
-Failure		11/24/2015  3:44:56 	Consistency		Push	True				36
+Status      StartDate               Type            Mode    RebootRequested     NumberOfResources
+------      ---------               ----            ----    ---------------     -----------------
+Failure     11/24/2015  3:44:56     Consistency     Push    True                36
 
 PS C:\> $Status.ResourcesNotInDesiredState
 
-ConfigurationName		:	MyService
-DependsOn				:
-ModuleName				:	PSDesiredStateConfiguration
-ModuleVersion			:	1.1
-PsDscRunAsCredential	:
-ResourceID 				:	[File]ServiceDll
-SourceInfo				:	c:\git\CustomerService\Configs\MyCustomService.ps1::5::34::File
-DurationInSeconds		:	0.19
-Error					:	SourcePath must be accessible for current configuration. The related file/directory is:
-							\\Server93\Shared\contosoApp.dll. The related ResourceID is [File]ServiceDll
-FinalState				:
-InDesiredState 			:	False
-InitialState 			:
-InstanceName			:	ServiceDll
-RebootRequested			:	False
-ReosurceName			:	File
-StartDate				:	11/24/2015  3:44:56
-PSComputerName			:
+ConfigurationName       :   MyService
+DependsOn               :
+ModuleName              :   PSDesiredStateConfiguration
+ModuleVersion           :   1.1
+PsDscRunAsCredential    :
+ResourceID              :   [File]ServiceDll
+SourceInfo              :   c:\git\CustomerService\Configs\MyCustomService.ps1::5::34::File
+DurationInSeconds       :   0.19
+Error                   :   SourcePath must be accessible for current configuration. The related file/directory is:
+                            \\Server93\Shared\contosoApp.dll. The related ResourceID is [File]ServiceDll
+FinalState              :
+InDesiredState          :   False
+InitialState            :
+InstanceName            :   ServiceDll
+RebootRequested         :   False
+ReosurceName            :   File
+StartDate               :   11/24/2015  3:44:56
+PSComputerName          :
 ```
 
 ## My script won’t run: Using DSC logs to diagnose script errors
@@ -279,7 +279,6 @@ ComputerName   SequenceId TimeCreated           Result   JobID                  
 SRV1   1          6/23/2016 9:37:52 AM  Failure  9701aadf-395e-11e6-9165-00155d390509  {@{Message=; TimeC...
 SRV1   2          6/23/2016 9:36:54 AM  Failure  7e8e2d6e-395c-11e6-9165-00155d390509  {@{Message=; TimeC...
 SRV1   3          6/23/2016 9:36:54 AM  Success  af72c6aa-3960-11e6-9165-00155d390509  {@{Message=Operati...
-
 ```
 
 You can also specify that you want only results for the most recent operations by using the `Newest` parameter:

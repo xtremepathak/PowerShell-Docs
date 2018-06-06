@@ -48,8 +48,8 @@ PS C:\> Clear-Content -Path "*" -Filter "*.log" -Force
 ```
 
 This command deletes the contents of all files in the current directory with the ".log" file name extension, including files with the read-only attribute.
-The asterisk (*) in the path represents all items in the current directory.
-The *Force* parameter makes the command effective on read-only files.
+The asterisk (<em>) in the path represents all items in the current directory.
+The *Force</em> parameter makes the command effective on read-only files.
 Using a filter to restrict the command to files with the .log file name extension instead of specifying *.log in the path makes the operation faster.
 
 ## PARAMETERS

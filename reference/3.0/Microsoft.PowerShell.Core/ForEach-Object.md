@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -355,4 +355,4 @@ The objects that ForEach-Object returns are determined by the input.
 ## NOTES
 
 - The **ForEach-Object** cmdlet works much like the **Foreach** statement, except that you cannot pipe input to a **Foreach** statement. For more information about the **Foreach** statement, see about_Foreach (http://go.microsoft.com/fwlink/?LinkID=113229).
-## RELATED LINKS
+  ## RELATED LINKS

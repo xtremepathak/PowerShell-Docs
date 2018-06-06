@@ -479,7 +479,7 @@ If you use the Quiet parameter, the output is a Boolean value indicating whether
 * To find the properties of a MatchInfo object, type the following:
 
   select-string -path test.txt -pattern "test" | get-member | format-list -property *
-## RELATED LINKS
+  ## RELATED LINKS
 
 [about_Comparison_Operators](../Microsoft.PowerShell.Core/About/about_Comparison_Operators.md)
 

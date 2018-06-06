@@ -14,7 +14,6 @@ Gets certificate store locations, certificate stores, and certificates in the Wi
 
 ```
 Get-ChildItem [-CodeSigningCert] [-DnsName <string>] [-EKU <string>] [-ExpiringInDays <int>] [-SSLServerAuthentication] [<CommonParameters>]
-
 ```
 
 ## Description
@@ -152,7 +151,6 @@ StoreNames : {TrustedPublisher, ClientAuthIssuer, Remote Desktop, Root...}
 Description
 -----------
 At the root of the Cert: drive, the Get-ChildItem cmdlet gets certificate store locations.
-
 ```
 
 ## Example 2
@@ -193,7 +191,6 @@ Name : Disallowed
 Description
 -----------
 In a certificate store location in Cert: drive, the Get-ChildItem cmdlet gets certificate stores.
-
 ```
 
 ## Example 3
@@ -212,7 +209,6 @@ D259F7B1DA04D41451866A2D464EC4A71BCBEDCD  CN=fabrikam-v6_CA, OU=Microsoft PKI Te
 Description
 -----------
 In a certificate store in Cert: drive, the Get-ChildItem cmdlet gets certificates.
-
 ```
 
 ## Example 4
@@ -253,7 +249,6 @@ Description
 This command displays all of the properties and property values of a certificate in a list. It uses the Get-ChildItem cmdlet to get the certificate and the Format-List cmdlet to display the properties.
 
 If the value of a property is an object name, use dot notation to display the object value. For example, "(Get-ChildItem -Path D259F7B1DA04D41451866A2D464EC4A71BCBEDCD).IssuerName".
-
 ```
 
 ## Example 5
@@ -264,7 +259,6 @@ C:\PS>Get-ChildItem -Path cert: -CodeSigningCert -Recurse
 Description
 -----------
 This command uses the CodeSigningCert and Recurse parameters of the Get-ChildItem cmdlet to get all of the certificates on the computer that have code-signing authority. Because the full path is specified, this command can be run in any Windows PowerShell drive.
-
 ```
 
 ## Example 6
@@ -275,7 +269,6 @@ C:\PS>Get-ChildItem -Path cert:\LocalMachine\WebHosting -DNSName "*fabrikam*"
 Description
 -----------
 This command uses the DNSName parameter of the Get-ChildItem cmdlet to get all of the certificates in the WebHosting store whose domain names contain "Fabrikam".
-
 ```
 
 ## Example 7
@@ -286,7 +279,6 @@ C:\PS>Get-ChildItem -Path cert:\LocalMachine\WebHosting -ExpiringInDays 30
 Description
 -----------
 This command uses the ExpiringInDays parameter of the Get-ChildItem cmdlet to get certificates that will expire within the next 30 days.
-
 ```
 
 ## Example 8
@@ -297,7 +289,6 @@ C:\PS>Invoke-Command -ComputerName Srv01, Srv02 -ScriptBlock {Get-ChildItem -Pat
 Description
 -----------
 This command uses the Invoke-Command cmdlet to run a Get-ChildItem command on the Srv01 and Srv02 computers. A value of zero (0) in the ExpiringInDays parameter gets all certificates on the Srv01 and Srv02 computers that have expired.
-
 ```
 
 ## Example 9
@@ -308,7 +299,6 @@ C:\PS>Get-ChildItem -Path cert:\LocalMachine\My, cert:\LocalMachine\WebHosting -
 Description
 -----------
 This command uses the EKU parameter of the Get-ChildItem cmdlet to get all Server SSL Certificates in the My and WebHosting stores.
-
 ```
 
 ## Example 10
@@ -319,7 +309,6 @@ C:\PS>Get-ChildItem -Path cert:\* -Recurse  -DNSName "*fabrikam*" -EKU "*Server*
 Description
 -----------
 This command gets all certificates in the LocalMachine store location that have "fabrikam" in their DNS name, "Server" in their EKU, a value of $true for the SendAsTrustedIssuer property, and do not expire within the next 30 days. The NotAfter property stores the certificate expiration date.
-
 ```
 
 ## See Also

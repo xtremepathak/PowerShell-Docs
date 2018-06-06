@@ -400,8 +400,8 @@ You can pipe a module object from the Get-Module cmdlet to  **Update-Help**.
 * To update help for the Windows PowerShell Core modules (which contain the commands that are installed with Windows PowerShell) or any module in the $pshome\Modules directory, start Windows PowerShell with the "Run as administrator" option.
 
   Only  members of the Administrators group on the computer can update help for the for the Windows PowerShell Core modules (the commands that are installed with Windows PowerShell) and for modules in the $pshome\Modules directory.
-If you do not have permission to update help files, you might be able to read the help topics online.
-To open the online version of any cmdlet help topic, type "`Get-Help \<cmdlet-name\> -Online `".
+  If you do not have permission to update help files, you might be able to read the help topics online.
+  To open the online version of any cmdlet help topic, type "`Get-Help \<cmdlet-name\> -Online `".
 
 * Modules are the smallest unit of updatable help. You cannot update help for a particular cmdlet; only for all cmdlets in module. To find the module that contains a particular cmdlet, use the **ModuleName** property of the Get-Command cmdlet, for example, `(Get-Command \<cmdlet-name\>).ModuleName`
 * Because help files are installed in the module directory, the **Update-Help** cmdlet can install updated help file only for modules that are installed on the computer. However, the Save-Help cmdlet can save help for modules that are not installed on the computer.
@@ -412,7 +412,7 @@ To open the online version of any cmdlet help topic, type "`Get-Help \<cmdlet-na
 * To update help for a module in a location that is not listed in the **PSModulePath** environment variable, import the module into the current session and then run an **Update-Help** command. Run the **Update-Help** command without parameters or use the **Module** parameter to specify the module name. The **Module** parameter of the **Update-Help** and Save-Help cmdlets does not accept the full path to a module file or module manifest file.
 * Any module can support Updatable Help. For instructions for supporting Updatable Help in the modules that you author, see "Supporting Updatable Help" in the MSDN Library at http://go.microsoft.com/fwlink/?LinkID=242129.
 * The **Update-Help** and **Save-Help** cmdlets are not supported on Windows Preinstallation Environment (Windows PE).
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Updatable Help Status Table (http://go.microsoft.com/fwlink/?LinkID=270007)](http://go.microsoft.com/fwlink/?LinkID=270007)
 

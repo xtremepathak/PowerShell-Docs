@@ -51,10 +51,10 @@ RoleDefinitions = @{
 }
 ```
 When creating a JEA endpoint, the following parameters of the command (and corresponding keys in the file) must be set:
-1.	SessionType to RestrictedRemoteServer
-2.	RunAsVirtualAccount to **$true**
-3.	TranscriptPath to the directory where “over the shoulder” transcripts will be saved after each session
-4.	RoleDefinitions to a hashtable that defines which groups have access to which “Role Capabilities.”  This field defines **who** can do **what** on this endpoint.   Role Capabilities are special files that will be explained shortly.
+1.  SessionType to RestrictedRemoteServer
+2.  RunAsVirtualAccount to **$true**
+3.  TranscriptPath to the directory where “over the shoulder” transcripts will be saved after each session
+4.  RoleDefinitions to a hashtable that defines which groups have access to which “Role Capabilities.”  This field defines **who** can do **what** on this endpoint.   Role Capabilities are special files that will be explained shortly.
 
 
 The RoleDefinitions field defines which groups had access to which Role Capabilities.  A Role Capability is a file that defines a set of capabilities that will be exposed to connecting users.  You can create Role Capabilities with the **New-PSRoleCapabilityFile** command.
@@ -125,7 +125,6 @@ Copyright = '(c) 2015 Administrator. All rights reserved.'
 # AssembliesToLoad = 'System.Web', 'System.OtherAssembly, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
 
 }
-
 ```
 To be used by a JEA session configuration, Role Capabilities must be saved as a valid PowerShell module in a directory named “RoleCapabilities”. A module may have multiple role capability files, if desired.
 

@@ -87,10 +87,10 @@ Windows 8<br/>Windows Server 2012 | installed | [WMF 4.0](https://www.microsoft.
 Windows 7 SP1<br/>Windows Server 2008 R2 SP1 | [WMF 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=34595) | [WMF 4.0](https://www.microsoft.com/en-us/download/details.aspx?id=40855) | [WMF 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395) | [WMF 5.1](https://www.microsoft.com/en-us/download/details.aspx?id=54616)
 
 > **Note 1**:
-  >>
-  >> On the initial release of Windows 10, with automatic updates enabled, PowerShell gets updated from version 5.0 to 5.1.
-  >>
-  >> If the original version of Windows 10 is not updated through Windows Updates, the version of PowerShell is 5.0.
+> >
+> > On the initial release of Windows 10, with automatic updates enabled, PowerShell gets updated from version 5.0 to 5.1.
+> >
+> > If the original version of Windows 10 is not updated through Windows Updates, the version of PowerShell is 5.0.
 
 ## Need Azure PowerShell
 

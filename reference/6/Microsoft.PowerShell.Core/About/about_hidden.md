@@ -104,7 +104,6 @@ ToString    Method     string ToString()
 Color       Property   string Color {get;set;}
 Distance    Property   int Distance {get;set;}
 ModelYear   Property   string ModelYear {get;set;}
-
 ```
 
 Now, try running Get-Member again, but this time, add the –Force parameter.
@@ -140,7 +139,6 @@ Color         Property     string Color {get;set;}
 Distance      Property     int Distance {get;set;}
 ModelYear     Property     string ModelYear {get;set;}
 rides         Property     int rides {get;set;}
-
 ```
 
 ## SEE ALSO

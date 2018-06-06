@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Certificate
-Specifies the client certificate that is used to sign the format files (*.Format.ps1xml) or script module files (.psm1) in the module that **Export-PSSession** creates.
+Specifies the client certificate that is used to sign the format files (<em>.Format.ps1xml) or script module files (.psm1) in the module that **Export-PSSession</em>* creates.
 Enter a variable that contains a certificate or a command or expression that gets the certificate.
 
 To find a certificate, use the Get-PfxCertificate cmdlet or use the Get-ChildItem cmdlet in the Certificate (Cert:) drive.

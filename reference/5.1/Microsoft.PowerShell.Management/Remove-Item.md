@@ -49,8 +49,8 @@ PS C:\> Remove-Item * -Include *.doc -Exclude *1*
 ```
 
 This command deletes from the current folder all files that have a .doc file name extension and a name that does not include 1.
-It uses the wildcard character (*) to specify the contents of the current folder.
-It uses the *Include* and *Exclude* parameters to specify the files to delete.
+It uses the wildcard character (<em>) to specify the contents of the current folder.
+It uses the *Include</em> and *Exclude* parameters to specify the files to delete.
 
 ### Example 3: Delete hidden, read-only files
 ```
@@ -71,8 +71,8 @@ This command deletes all of the CSV files in the current folder and all subfolde
 
 Because the *Recurse* parameter in **Remove-Item** has a known issue, the command in this example uses **Get-ChildItem** to get the desired files, and then uses the pipeline operator to pass them to **Remove-Item**.
 
-In the **Get-ChildItem** command, *Path* has a value of *, which represents the contents of the current folder.
-It uses *Include* to specify the CSV file type, and it uses *Recurse* to make the retrieval recursive.
+In the **Get-ChildItem** command, *Path* has a value of <em>, which represents the contents of the current folder.
+It uses *Include</em> to specify the CSV file type, and it uses *Recurse* to make the retrieval recursive.
 
 If you try to specify the file type the path, such as `-Path *.csv`, the cmdlet interprets the subject of the search to be a file that has no child items, and *Recurse* fails.
 

@@ -115,7 +115,7 @@ Year        : 2012
 This command shows how to use the **ConvertTo-Json** and **ConvertFrom-Json** cmdlets to convert an object to a JSON string and a JSON object.
 
 The first command uses the **ConvertTo-Json** cmdlet to convert a **System.DateTime** object from the Get-Date cmdlet to a JSON-formatted string.
-The command uses the Select-Object cmdlet to get all (*) of the properties of the **DateTime** object.
+The command uses the Select-Object cmdlet to get all (<em>) of the properties of the **DateTime</em>* object.
 The output shows the JSON string that **ConvertTo-Json** returned.
 
 The second command uses **ConvertFrom-Json** to convert the JSON string to a JSON object.

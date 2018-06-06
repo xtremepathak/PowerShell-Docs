@@ -292,31 +292,31 @@ This cmdlet does not return any object.
 * Disabling the session configurations does not undo all the changes that were made by the **Enable-PSRemoting** or **Enable-PSSessionConfiguration** cmdlets. You might have to undo the following changes manually.
 
   1.
-Stop and disable the WinRM service.
+  Stop and disable the WinRM service.
 
   2.
-Delete the listener that accepts requests on any IP address.
+  Delete the listener that accepts requests on any IP address.
 
   3.
-Disable the firewall exceptions for WS-Management communications.
+  Disable the firewall exceptions for WS-Management communications.
 
   4.
-Restore the value of the LocalAccountTokenFilterPolicy to 0, which restricts remote access to members of the Administrators group on the computer.
+  Restore the value of the LocalAccountTokenFilterPolicy to 0, which restricts remote access to members of the Administrators group on the computer.
 
   A session configuration is a group of settings that define the environment for a session.
-Every session that connects to the computer must use one of the session configurations that are registered on the computer.
-By denying remote access to all session configurations, you effectively prevent remote users from establishing sessions that connect to the computer.
+  Every session that connects to the computer must use one of the session configurations that are registered on the computer.
+  By denying remote access to all session configurations, you effectively prevent remote users from establishing sessions that connect to the computer.
 
   In Windows PowerShell 2.0, **Disable-PSRemoting** adds a Deny_All entry to the security descriptors of all session configurations.
-This setting prevents all users from creating user-managed sessions to the local computer.
-In Windows PowerShell 3.0, **Disable-PSRemoting** adds a Network_Deny_All entry to the security descriptors of all session configurations.
-This setting prevents users on other computers from creating user-managed sessions on the local computer, but allows users of the local computer to create user-managed loopback sessions.
+  This setting prevents all users from creating user-managed sessions to the local computer.
+  In Windows PowerShell 3.0, **Disable-PSRemoting** adds a Network_Deny_All entry to the security descriptors of all session configurations.
+  This setting prevents users on other computers from creating user-managed sessions on the local computer, but allows users of the local computer to create user-managed loopback sessions.
 
   In Windows PowerShell 2.0, **Disable-PSRemoting** is the equivalent of `Disable-PSSessionConfiguration -Name *`.
-In Windows PowerShell 3.0 and later releases, **Disable-PSRemoting** is the equivalent of `Set-PSSessionConfiguration -Name \<Configuration name\> -AccessMode Local`
+  In Windows PowerShell 3.0 and later releases, **Disable-PSRemoting** is the equivalent of `Set-PSSessionConfiguration -Name \<Configuration name\> -AccessMode Local`
 
   In Windows PowerShell 2.0, **Disable-PSRemoting** is a function.
-Beginning in Windows PowerShell 3.0, it is a cmdlet.
+  Beginning in Windows PowerShell 3.0, it is a cmdlet.
 
 ## RELATED LINKS
 

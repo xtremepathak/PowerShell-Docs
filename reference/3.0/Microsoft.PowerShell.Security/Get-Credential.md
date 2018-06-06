@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -268,8 +268,8 @@ Get-Credential returns a credential object.
 - By default, the authentication prompt appears in a dialog box. To display the authentication prompt at the command line, add the **ConsolePrompting** registry entry (HKLM:\SOFTWARE\Microsoft\PowerShell\1\ShellIds\ConsolePrompting) and set its value to True. If the **ConsolePrompting** registry entry does not exist or if its value is False, the authentication prompt appears in a dialog box. For instructions, see the examples.
 
   The **ConsolePrompting** registry entry works in the Windows PowerShell console, but it does not work in all host programs.
-For example, it has no effect in the Windows PowerShell Integrated Scripting Environment (ISE).
-For information about the effect of the **ConsolePrompting** registry entry, see the help topics for the host program.
+  For example, it has no effect in the Windows PowerShell Integrated Scripting Environment (ISE).
+  For information about the effect of the **ConsolePrompting** registry entry, see the help topics for the host program.
 
 - The **Credential** parameter is not supported by all providers that are installed with Windows PowerShell. Beginning in Windows PowerShell 3.0, it is supported on selected cmdlet, such as the Get-WmiObject and New-PSDrive cmdlets.
-## RELATED LINKS
+  ## RELATED LINKS

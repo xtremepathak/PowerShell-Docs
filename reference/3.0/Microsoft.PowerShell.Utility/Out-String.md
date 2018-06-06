@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -142,7 +142,7 @@ Out-String returns the string that it creates from the input object.
 
 - The cmdlets that contain the **Out** verb (the **Out** cmdlets) do not format objects; they just render them and send them to the specified display destination. If you send an unformatted object to an **Out** cmdlet, the cmdlet sends it to a formatting cmdlet before rendering it.
 - The **Out** cmdlets do not have parameters that take  names or file paths. To send data to an **Out** cmdlet, use a pipeline operator (|) to send the output of a Windows PowerShell command to the cmdlet. You can also store data in a variable and use the **InputObject** parameter to pass the data to the cmdlet. For more information, see the examples.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Out-Default](../Microsoft.PowerShell.Core/Out-Default.md)
 

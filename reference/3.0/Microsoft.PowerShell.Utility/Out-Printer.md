@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -117,16 +117,16 @@ Out-Printer does not return any objects.
 - You can also refer to Out-Printer by its built-in alias, "lp". For more information, see about_Aliases.
 
   The cmdlets that contain the Out verb (the Out cmdlets) do not format objects; they just render them and send them to the specified display destination.
-If you send an unformatted object to an Out cmdlet, the cmdlet sends it to a formatting cmdlet before rendering it.
+  If you send an unformatted object to an Out cmdlet, the cmdlet sends it to a formatting cmdlet before rendering it.
 
   The Out cmdlets do not have parameters for names or file paths.
-To send data to an Out cmdlet, use a pipeline operator (|) to send the output of a Windows PowerShell command to the cmdlet.
-You can also store data in a variable and use the InputObject parameter to pass the data to the cmdlet.
-For more information, see the examples.
+  To send data to an Out cmdlet, use a pipeline operator (|) to send the output of a Windows PowerShell command to the cmdlet.
+  You can also store data in a variable and use the InputObject parameter to pass the data to the cmdlet.
+  For more information, see the examples.
 
   Out-Printer sends data, but it does not emit any output objects.
-If you pipe the output of Out-Printer to Get-Member, Get-Member reports that no objects have been specified.
-## RELATED LINKS
+  If you pipe the output of Out-Printer to Get-Member, Get-Member reports that no objects have been specified.
+  ## RELATED LINKS
 
 [Out-Default](../Microsoft.PowerShell.Core/Out-Default.md)
 

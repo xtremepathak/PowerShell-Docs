@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -13,7 +13,6 @@ Deletes certificate stores, certificates, and private keys.
 
 ```
 Remove-Item [-Path] <string[]> [-DeleteKey] [-Confirm] [-WhatIf] [<CommonParameters>]
-
 ```
 
 ## Description
@@ -103,7 +102,6 @@ PS> Remove-Item -Path cert:\LocalMachine\CA\5DDC44652E62BF9AA1116DC41DE44AB47C87
 Description
 -----------
 This command deletes a certificate from the CA certificate store, but leaves the associated private key intact.
-
 ```
 
 ## Example 2
@@ -134,7 +132,6 @@ PS> $s  = New-PSSession S1 -Authentication CredSSP -Credential Domain01\Admin01
 The fifth command uses the Invoke-Command cmdlet to run a Remove-Item command in the session in the $s variable. The Remove-Item command uses the DeleteKey parameter to remove the private key along with the specified certificate.
 
 PS> Invoke-Command -Session $s { Remove-Item cert:\LocalMachine\My\D2D38EBA60CAA1C12055A2E1C83B15AD450110C2 -DeleteKey  }
-
 ```
 
 ## Example 3
@@ -147,7 +144,6 @@ Description
 This command uses the ExpiringInDays parameter of the Get-ChildItem cmdlet with a value of 0 to get certificates in the WebHosting store that have expired.
 
 It uses a pipeline operator to pass the certificates to the Remove-Item cmdlet, which deletes them. The command uses the DeleteKey parameter to delete the private key along with the certificate.
-
 ```
 
 ## Example 4
@@ -158,7 +154,6 @@ PS> Get-ChildItem -Path cert:\LocalMachine -DnsName *Fabrikam* | Remove-Item
 Description
 -----------
 This command deletes all certificates that have a DNS name that contains "Fabrikam". It uses the DNSName parameter of the Get-ChildItem cmdlet to get the certificates and the Remove-Item cmdlet to delete them.
-
 ```
 
 ## See Also

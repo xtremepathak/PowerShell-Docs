@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  02/14/2018
 schema:  2.0.0
 locale:  en-us

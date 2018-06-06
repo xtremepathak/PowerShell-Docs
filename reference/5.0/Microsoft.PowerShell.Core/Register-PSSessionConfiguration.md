@@ -236,7 +236,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationBase
-Specifies the path of the assembly file (*.dll) that is specified in the value of the *AssemblyName* parameter.
+Specifies the path of the assembly file (<em>.dll) that is specified in the value of the *AssemblyName</em> parameter.
 Use this parameter when the value of the *AssemblyName* parameter does not include a path.
 The default is the current directory.
 
@@ -253,8 +253,8 @@ Accept wildcard characters: False
 ```
 
 ### -AssemblyName
-Specifies the name of an assembly file (*.dll) in which the configuration type is defined.
-You can specify the path of the .dll in this parameter or in the value of the *ApplicationBase* parameter.
+Specifies the name of an assembly file (<em>.dll) in which the configuration type is defined.
+You can specify the path of the .dll in this parameter or in the value of the *ApplicationBase</em> parameter.
 
 This parameter is required when you specify the *ConfigurationTypeName* parameter.
 

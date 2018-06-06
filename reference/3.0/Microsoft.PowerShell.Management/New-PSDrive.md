@@ -33,7 +33,7 @@ New features are added to New-PSDrive in Windows PowerShell 3.0.
 - Mapped network drives: You can use the **Persist** parameter of **New-PSDrive** to create Windows mapped network drives. Unlike temporary Windows PowerShell drives, Windows mapped network drives are not session-specific; they are saved in Windows and they can be managed by using standard Windows tools, such as File Explorer and Net Use. Mapped network drives must have a drive-letter name and be connected to a remote file system location. When your command is scoped locally (no dot-sourcing), the **Persist** parameter doesn't persist the creation of a PSDrive beyond the scope in which the command is running. If you are running New-PSDrive inside of a script, and you want the drive to persist indefinitely, you must dot-source the script. For best results, to force a new drive to persist indefinitely, add the **Scope** parameter to your command, and set its value to **Global**.
 - External drives: When an external drive is connected to the computer, Windows PowerShell automatically adds a PSDrive to the file system that represents the new drive. You do not need to restart Windows PowerShell. Similarly, when an external drive is disconnected from the computer, Windows PowerShell automatically deletes the PSDrive that represents the removed drive.
 - Credentials for UNC Paths: When the value of the **Root** parameter is a UNC path, such as \\\\Server\Share, the credential specified in the value of the **Credential** parameter is used to create the PSDrive. Otherwise, the **Credential** parameter is not effective when creating new file system drives.
-## EXAMPLES
+  ## EXAMPLES
 
 ### Example 1
 ```
@@ -368,7 +368,7 @@ You cannot pipe input to this cmdlet.
 ## NOTES
 * The **New-PSDrive** cmdlet is designed to work with the data exposed by any provider. To list the providers available in your session, use the Get-PSProvider cmdlet. For more information about providers, see [about_Providers](../Microsoft.PowerShell.Core/About/about_Providers.md).
 * Mapped network drives are specific to a user account. Mapped network drives that you create in sessions that are started with the "Run as administrator" option or with the credential of another user are not visible in session that started without explicit credentials or with the credentials of the current user.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Get-PSDrive](Get-PSDrive.md)
 

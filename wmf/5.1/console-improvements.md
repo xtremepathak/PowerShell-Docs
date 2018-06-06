@@ -10,7 +10,7 @@ title:  Console Improvements in WMF 5.1
 
 The following changes have been made to powershell.exe in WMF 5.1 to improve the console experience:
 
-###VT100 support
+### VT100 support
 
 Windows 10 added support for [VT100 escape sequences](https://msdn.microsoft.com/en-us/library/windows/desktop/mt638032(v=vs.85).aspx).
 PowerShell will ignore certain VT100 formatting escape sequences when calculating table widths.

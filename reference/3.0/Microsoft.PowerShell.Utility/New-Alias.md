@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -233,7 +233,7 @@ Otherwise, this cmdlet does not generate any output.
 ## NOTES
 
 - To create a new alias, use Set-Alias or New-Alias. To change an alias, use Set-Alias. To delete an alias, use Remove-Item.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Export-Alias](Export-Alias.md)
 

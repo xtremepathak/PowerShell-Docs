@@ -48,6 +48,7 @@ PackageManagement [string] #ResourceName
 ## Additional Parameters
 
 The following table lists options for the AdditionalParameters property.
+
 |  Parameter  | Description   |
 |---|---|
 | DestinationPath| Used by providers such as the built-in Nuget Provider. Specifies a file location where you want the package to be installed.|

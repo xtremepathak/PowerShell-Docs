@@ -109,7 +109,7 @@ Similarly, the **CurrentUICulture** property returns the same object that Get-UI
 
 The **CurrentCulture** property of the host object contains a **System.Globalization.CultureInfo** object.
 This command uses a pipeline operator (|) to send the **CultureInfo** object to the Format-List cmdlet.
-The **Format-List** command uses the *Property* parameter with a value of all (*) to display all of the properties and property values of the **CultureInfo** object.
+The **Format-List** command uses the *Property* parameter with a value of all (<em>) to display all of the properties and property values of the **CultureInfo</em>* object.
 
 ### Example 5: Get the DateTimeFormat for the current culture
 ```

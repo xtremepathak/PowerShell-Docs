@@ -62,14 +62,14 @@ configuration from. Make sure that you export only the **public** key; keep the 
 
 To enact credential encryption, a public key certificate must be available on the _Target Node_ that is **trusted** by the computer being used to author the DSC configuration.
 This public key certificate has specific requirements for it to be used for DSC credential encryption:
- 1. **Key Usage**:
+1. **Key Usage**:
    - Must contain: 'KeyEncipherment' and 'DataEncipherment'.
    - Should _not_ contain: 'Digital Signature'.
- 2. **Enhanced Key Usage**:
+2. **Enhanced Key Usage**:
    - Must contain: Document Encryption (1.3.6.1.4.1.311.80.1).
    - Should _not_ contain: Client Authentication (1.3.6.1.5.5.7.3.2) and Server Authentication (1.3.6.1.5.5.7.3.1).
- 3. The Private Key for the certificate is available on the *Target Node_.
- 4. The **Provider** for the certificate must be "Microsoft RSA SChannel Cryptographic Provider".
+3. The Private Key for the certificate is available on the *Target Node_.
+4. The **Provider** for the certificate must be "Microsoft RSA SChannel Cryptographic Provider".
 
 >**Recommended Best Practice:** Although you can use a certificate with containing a Key Usage of 'Digital Signature' or one of the Authentication EKU's, this will enable the encryption key
 >to be more easily misused and vulnerable to attack. So it is best practice to use a certificate created specifically for the purpose of securing DSC credentials that omits these Key Usage and
@@ -151,10 +151,10 @@ Alternately, the encryption certificate can be created on the **Authoring Node**
 This is the current method for implementing DSC credential encryption on _Nano Server_.
 Although the PFX is secured with a password it should be kept secure during transit.
 The following example:
- 1. creates a certificate on the **Authoring node**.
- 2. exports the certificate including the private key on the **Authoring node**.
- 3. removes the private key from the **Authoring node**, but keeps the public key certificate in the **my** store.
- 4. imports the private key certificate into the My(Personal) certificate store on the **Target node**.
+1. creates a certificate on the **Authoring node**.
+2. exports the certificate including the private key on the **Authoring node**.
+3. removes the private key from the **Authoring node**, but keeps the public key certificate in the **my** store.
+4. imports the private key certificate into the My(Personal) certificate store on the **Target node**.
    - it must be added to the root store so that it will be trusted by the **Target node**.
 
 #### On the Authoring Node: create and export the certificate

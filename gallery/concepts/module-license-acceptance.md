@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 keywords:  powershell
@@ -39,7 +39,7 @@ Modules that would like to require users to accept license should fulfill follow
 - If the module version is already listed in the local catalog as being installed on the system, we would bypass the license checking.
 - During Install/Save/Update operation, if a dependent module requires a license, and the license acceptance does not occur, the operation will fail and follow normal processes for the item failed to install/save/update.
 
- ## Impact on -Force
+  ## Impact on -Force
 
 Specifying –Force is NOT sufficient to accept a license. –AcceptLicense is required for permission to install. If –Force is specified, RequiredLicenseAcceptance is True, and –AcceptLicense is NOT specified, the operation will fail.
 
@@ -79,7 +79,6 @@ copies of the Software.
 
 Do you accept the license terms for module 'ModuleRequireLicenseAcceptance'.
 [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
-
 ```
 
 This command shows the license from license.txt file and prompts the user to accept the license.
@@ -140,7 +139,6 @@ PS>  Install-Module -Name ModuleWithDependency -AcceptLicense
 PS C:\windows\system32> Install-Module -Name ModuleRequireLicenseAcceptance
 
 WARNING: The specified module 'ModuleRequireLicenseAcceptance' with PowerShellGetFormatVersion '2.0' is not supported by the current version of PowerShellGet. Get the latest version of the PowerShellGet module to install this module, 'ModuleRequireLicenseAcceptance'.
-
 ```
 
 ### Example 8: Save Module requiring license acceptance

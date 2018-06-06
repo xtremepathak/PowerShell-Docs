@@ -14,7 +14,6 @@ Appends content, such as words or data, to a file.
 
 ```
 Add-Content [-Encoding {<Unknown> | <String> | <Unicode> | <Byte> | <BigEndianUnicode> | <UTF8> | <UTF7> | <UTF32> | <Ascii> | <Default> | <Oem>}] [-Force] [-Stream <string>] [-Confirm] [-WhatIf] [-UseTransaction] [<CommonParameters>]
-
 ```
 
 ## Description
@@ -133,7 +132,6 @@ C:\PS>Add-Content -Path *.txt -Exclude help* -Value "END"
 Description
 -----------
 This command adds "END" to all text files in the current directory, except for those with file names that begin with "help."
-
 ```
 
 ## Example 2
@@ -146,7 +144,6 @@ Description
 This command adds the date to the end of the File1.log and File2.log files and then displays the date at the command line.
 
 The command uses the Get-Date cmdlet to get the date, and it uses the Value parameter to pass the date to Add-Content. The PassThru parameter sends the added content through the pipeline. Because there is no other cmdlet to receive the passed content, it is displayed at the command line.
-
 ```
 
 ## Example 3
@@ -159,7 +156,6 @@ Description
 This command adds the contents of the Weekly.txt file to the end of the Monthly.txt file. It uses the Get-Content cmdlet to get the contents of the Weekly.txt file, and it uses the Value parameter to pass the content of weekly.txt to Add-Content. The parentheses ensure that the Get-Content command is complete before the Add-Content command begins.
 
 You can also copy the content of Weekly.txt to a variable, such as $w, and then use the Value parameter to pass the variable to Add-Content. In that case, the command would be "add-content -path monthly.txt -value $w".
-
 ```
 
 ## Example 4
@@ -176,7 +172,6 @@ This command uses the Add-Content cmdlet to add the content. The value of the Va
 The value of the path parameter is a path that does not exist when the command runs. In this example, only the C:\Tests directories exist. The command creates the remaining directories and the Test134.log file.
 
 The Force parameter is not required for this command. Add-Content creates directories to complete a path even without the Force parameter.
-
 ```
 
 ## Example 5
@@ -189,7 +184,6 @@ Description
 This command appends the contents of the final.xml file to the contents of the test.xml file.
 
 The command uses the Force parameter so that the command is successful even if the Final.xml file is read-only. It uses the Encoding parameter to specify an encoding of UTF-8.
-
 ```
 
 ## See Also

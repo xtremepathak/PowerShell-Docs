@@ -282,14 +282,14 @@ The object type depends upon the ACL type.
 
   When you format the result as a list, ("`Get-Acl | Format-List`"), in addition to the path, owner, and access list, Windows PowerShell displays the following properties and property values:
 
-- Group.
-The security group of the owner.
-- Audit.
-A list (array) of entries in the system access control list (SACL).
-The SACL specifies the types of access attempts for which Windows generates audit records.
-- Sddl.
-The security descriptor of the resource displayed in a single text string in Security Descriptor Definition Language (SDDL) format.
-Windows PowerShell uses the GetSddlForm method of security descriptors to get this data.
+* Group.
+  The security group of the owner.
+* Audit.
+  A list (array) of entries in the system access control list (SACL).
+  The SACL specifies the types of access attempts for which Windows generates audit records.
+* Sddl.
+  The security descriptor of the resource displayed in a single text string in Security Descriptor Definition Language (SDDL) format.
+  Windows PowerShell uses the GetSddlForm method of security descriptors to get this data.
 
 * Because **Get-Acl** is supported by the file system and registry providers, you can use **Get-Acl** to view the ACL of file system objects, such as files and directories, and registry objects, such as registry keys and entries.
 

@@ -14,7 +14,6 @@ Creates a new item.
 
 ```
 New-Item -Plugin <string> -Filename <string> -ResourceURI <Uri> -Capability <string> [-lang <string>] -SDKVersion <string> [-xmlns <string>] -XMLRenderingType <string> [-Confirm] [-WhatIf] [<CommonParameters>]
-
 ```
 
 ## Description
@@ -184,7 +183,6 @@ C:\PS>New-Item -Path WSMan:\localhost\Plugin -Force -Name "Test Plugin" -File C:
 This command creates (registers) a plug-in for the WS-Management service. This example uses an XML file to load all of the necessary setting to create a plug-in.
 
 This command creates (registers) a plug-in for the WS-Management service. This example uses an XML file to load all of the necessary setting to create a plug-in.
-
 ```
 
 ## Example 2
@@ -193,7 +191,6 @@ This command creates (registers) a plug-in for the WS-Management service. This e
 C:\PS>New-Item -Path WSMan:\localhost\Plugin -Plugin TestPlugin -FileName %systemroot%\system32\WsmWmiPl.dll -Resource http://schemas.dmtf.org/wbem/wscim/2/cim-schema -SDKVersion 1 -Capability "Get","Put","Invoke","Enumerate" -XMLRenderingType text
 
 This command creates (registers) a plug-in for the WS-Management service.
-
 ```
 
 ## See Also

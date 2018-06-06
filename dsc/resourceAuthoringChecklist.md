@@ -124,9 +124,9 @@ Creating quality examples which will help others understand how to use it. This 
 - The initial examples should be very simple -- how to get started with your resources in small manageable chunks (e.g. creating a new VHD)
 - Subsequent examples should build on those examples (e.g. creating a VM from a VHD, removing VM, modifying VM), and show advanced functionality (e.g. creating a VM with dynamic memory)
 - Example configurations should be parameterized (all values should be passed to the configuration as parameters and there should be no hardcoded values):
-```powershell
-configuration Sample_xRemoteFile_DownloadFile
-{
+  ```powershell
+  configuration Sample_xRemoteFile_DownloadFile
+  {
     param
     (
         [string[]] $nodeName = 'localhost',
@@ -156,10 +156,10 @@ configuration Sample_xRemoteFile_DownloadFile
             Headers = $headers
         }
     }
-}
-```
+  }
+  ```
 - It’s a good practice to include (commented out) example of how to call the configuration with the actual values at the end of the example script.
-For example, in the configuration above it isn't neccessarily obvious that the best way to specify UserAgent is:
+  For example, in the configuration above it isn't neccessarily obvious that the best way to specify UserAgent is:
 
 `UserAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::InternetExplorer`
 In which case a comment can clarify the intended execution of the configuration:
@@ -242,7 +242,7 @@ For xRemoteFile, ResourceTests.ps1 could look as simple as:
 Test-xDscResource ..\DSCResources\MSFT_xRemoteFile
 Test-xDscSchema ..\DSCResources\MSFT_xRemoteFile\MSFT_xRemoteFile.schema.mof
 ```
-##Best practice: Resource folder contains resource designer script for generating schema##
+## Best practice: Resource folder contains resource designer script for generating schema##
 Each resource should contain a resource designer script which generates a mof schema of the resource. This file should be placed in <ResourceName>\ResourceDesignerScripts and be named Generate<ResourceName>Schema.ps1
 For xRemoteFile resource this file would be called GenerateXRemoteFileSchema.ps1 and contain:
 ```powershell

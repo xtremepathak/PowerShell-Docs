@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -119,7 +119,7 @@ PS> Get-Job -Command "*get-process*"
 
 This command gets the jobs on the system that include a Get-Process command.
 The command uses the **Command** parameter of **Get-Job** to limit the jobs retrieved.
-The command uses wildcard characters (*) to get jobs that include a **Get-Process** command anywhere within the command string.
+The command uses wildcard characters (<em>) to get jobs that include a **Get-Process</em>* command anywhere within the command string.
 
 ### Example 4
 

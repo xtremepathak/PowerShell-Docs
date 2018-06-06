@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  09/26/2017
 contributor:  keithb
 keywords:  gallery,powershell,cmdlet,psget
@@ -139,7 +139,6 @@ C:\windows\system32> Get-InstalledModule TestPackage
 Version         Name                                Repository           Description
 -------         ----                                ----------           -----------
 1.9.0-alpha     TestPackage                         PSGallery            Package used to validate changes to the PowerShe...
-
 ```
 
 Side-by-side installation of versions of a module that differ only due to the prerelease specified

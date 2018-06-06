@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -154,7 +154,7 @@ It does not generate any other output.
 ## NOTES
 
 - The default value for the $WarningPreference variable is "Continue", which displays the warning and then continues executing the command. To determine valid values for a preference variable such as $WarningPreference, set it to a string of random characters, such as "abc". The resulting error message will list the valid values.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Write-Debug](Write-Debug.md)
 

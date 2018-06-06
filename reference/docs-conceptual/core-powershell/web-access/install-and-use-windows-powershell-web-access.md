@@ -134,14 +134,14 @@ section.
 #### To install Windows PowerShell Web Access by using Windows PowerShell cmdlets
 
 1. Do one of the following to open a Windows PowerShell session with
-elevated user rights.
-    - On the Windows desktop, right-click **Windows PowerShell** on the taskbar, and then click **Run as Administrator**.
-    - On the Windows **Start** screen, right-click **Windows PowerShell**, and then click **Run as Administrator**.
+   elevated user rights.
+   - On the Windows desktop, right-click **Windows PowerShell** on the taskbar, and then click **Run as Administrator**.
+   - On the Windows **Start** screen, right-click **Windows PowerShell**, and then click **Run as Administrator**.
 
-    >**![Note](images/note.jpeg) Note**
-    >In Windows PowerShell 3.0 and 4.0, there is no need to import the Server Manager cmdlet module into the Windows PowerShell session before running cmdlets that are part of the module. A module is automatically imported the first time you run a cmdlet that is part of the module. Also, Windows PowerShell cmdlets are not case-sensitive.
+     >**![Note](images/note.jpeg) Note**
+     >In Windows PowerShell 3.0 and 4.0, there is no need to import the Server Manager cmdlet module into the Windows PowerShell session before running cmdlets that are part of the module. A module is automatically imported the first time you run a cmdlet that is part of the module. Also, Windows PowerShell cmdlets are not case-sensitive.
 
-1. Type the following, and then press **Enter**, where *computer_name* represents a remote computer on which you want to install Windows PowerShell Web Access, if applicable. The `-Restart` parameter automatically restarts destination servers if required.
+2. Type the following, and then press **Enter**, where *computer_name* represents a remote computer on which you want to install Windows PowerShell Web Access, if applicable. The `-Restart` parameter automatically restarts destination servers if required.
 
    `Install-WindowsFeature -Name WindowsPowerShellWebAccess -ComputerName <computer_name> -IncludeManagementTools -Restart`
 
@@ -153,21 +153,21 @@ elevated user rights.
 
    `Install-WindowsFeature -Name WindowsPowerShellWebAccess -VHD <path> -ComputerName <computer_name> -IncludeManagementTools -Restart`
 
-1. When installation is complete, verify that Windows PowerShell Web Access
-was installed on destination servers by running the **Get-WindowsFeature**
-cmdlet on a destination server, in a Windows PowerShell console that has
-been opened with elevated user rights. You can also verify that Windows
-PowerShell Web Access was installed in the Server Manager console, by
-selecting a destination server on the **All Servers** page, and then
-viewing the **Roles and Features** tile for the selected server. You can
-also view the readme file for Windows PowerShell Web Access.
+3. When installation is complete, verify that Windows PowerShell Web Access
+   was installed on destination servers by running the **Get-WindowsFeature**
+   cmdlet on a destination server, in a Windows PowerShell console that has
+   been opened with elevated user rights. You can also verify that Windows
+   PowerShell Web Access was installed in the Server Manager console, by
+   selecting a destination server on the **All Servers** page, and then
+   viewing the **Roles and Features** tile for the selected server. You can
+   also view the readme file for Windows PowerShell Web Access.
 
-1. After Windows PowerShell Web Access is installed, you are prompted to
-review the readme file, which contains basic, required setup instructions
-for the gateway. These setup instructions are also in the following
-section, [Configure the Gateway](#configure-the-gateway). The path
-to the readme file is
-**C:\\Windows\\Web\\PowerShellWebAccess\\wwwroot\\README.txt**.
+4. After Windows PowerShell Web Access is installed, you are prompted to
+   review the readme file, which contains basic, required setup instructions
+   for the gateway. These setup instructions are also in the following
+   section, [Configure the Gateway](#configure-the-gateway). The path
+   to the readme file is
+   **C:\\Windows\\Web\\PowerShellWebAccess\\wwwroot\\README.txt**.
 
 ### Configure the Gateway
 
@@ -207,11 +207,11 @@ the gateway to use a valid certificate that has been signed by a CA.
 
     **Install-PswaWebApplication -UseTestCertificate**
 
-  >**![Security Note](images/securitynote.jpeg) Security Note**
-  >
-  >The `UseTestCertificate` parameter should only be
-  used in a private test environment. For a secure production environment,
-  we recommend using a valid certificate that has been signed by a CA.
+   >**![Security Note](images/securitynote.jpeg) Security Note**
+   >
+   >The `UseTestCertificate` parameter should only be
+   used in a private test environment. For a secure production environment,
+   we recommend using a valid certificate that has been signed by a CA.
 
 Running the cmdlet installs the Windows PowerShell Web Access web
 application within the IIS Default Web Site container. The cmdlet creates
@@ -482,7 +482,7 @@ in this guide.
 
     Change the default port if another website is already using 443, or if you have other security reasons for changing the port number. If another website that is running on your gateway server is using your selected port, a warning is displayed when you click **OK** in the **Add Website** dialog box. You must use an unused port to run Windows PowerShell Web Access.
 
-9. Optionally, if needed for your organization, specify a host name that makes sense to your organization and users, such as **www.contoso.com**. Click **OK**.
+9. Optionally, if needed for your organization, specify a host name that makes sense to your organization and users, such as <strong>www.contoso.com</strong>. Click **OK**.
 
 10. For a more secure production environment, we strongly recommend providing a valid certificate that has been signed by a CA. You must provide an SSL certificate, because users can only connect to Windows PowerShell Web Access through an HTTPS website. See [To configure an SSL certificate in IIS manager](#to-configure-an-ssl-certificate-in-iis-Manager) in this topic for more information about how to obtain a certificate.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -168,8 +168,8 @@ The type of object that Get-Unique returns is determined by the input.
 - You can also refer to Get-Unique by its built-in alias, "gu". For more information, see about_Aliases.
 
   To sort a list, use Sort-Object.
-You can also use the Unique parameter of Sort-Object to find the unique items in a list.
-## RELATED LINKS
+  You can also use the Unique parameter of Sort-Object to find the unique items in a list.
+  ## RELATED LINKS
 
 [Select-Object](Select-Object.md)
 

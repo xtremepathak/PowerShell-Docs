@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -173,7 +173,7 @@ The object type depends on the variable.
 ## NOTES
 
 - This cmdlet does not manage environment variables. To manage environment variables, you can use the environment variable provider.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Clear-Variable](Clear-Variable.md)
 

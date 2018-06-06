@@ -421,11 +421,11 @@ If the wait ends because the value of the *Timeout* parameter is exceeded, **Wai
 ## NOTES
 * By default, **Wait-Job** returns, or ends the wait, when jobs are in one of the following states:
 
-- Completed
-- Failed
-- Stopped
-- Suspended
-- Disconnected To direct **Wait-Job** to continue to wait for Suspended and Disconnected jobs, use the *Force* parameter.
+* Completed
+* Failed
+* Stopped
+* Suspended
+* Disconnected To direct **Wait-Job** to continue to wait for Suspended and Disconnected jobs, use the *Force* parameter.
 
 ## RELATED LINKS
 

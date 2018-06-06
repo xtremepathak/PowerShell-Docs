@@ -57,8 +57,8 @@ These commands trace the actions of the ParameterBinding operations of Windows P
 
 In **Trace-Command**, the *InputObject* parameter passes an object to the expression that is being processed during the trace.
 
-The first command stores the string "i*" in the $A variable.
-The second command uses the **Trace-Command** cmdlet with the ParameterBinding trace source.
+The first command stores the string "i<em>" in the $A variable.
+The second command uses the **Trace-Command</em>* cmdlet with the ParameterBinding trace source.
 The *PSHost* parameter sends the output to the console.
 
 The expression being processed is `Get-Alias $Input`, where the $Input variable is associated with the *InputObject* parameter.

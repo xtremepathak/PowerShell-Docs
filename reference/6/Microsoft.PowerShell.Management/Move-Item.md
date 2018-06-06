@@ -64,8 +64,8 @@ PS C:\> Get-ChildItem -Path ".\*.txt" -Recurse | Move-Item -Destination "C:\Text
 
 This command moves all of the text files from the current directory and all subdirectories, recursively, to the C:\TextFiles directory.
 
-The command uses the **Get-ChildItem** cmdlet to get all of the child items in the current directory (represented by the dot \[.\]) and its subdirectories that have a *.txt file name extension.
-It uses the *Recurse* parameter to make the retrieval recursive and the Include parameter to limit the retrieval to *.txt files.
+The command uses the **Get-ChildItem** cmdlet to get all of the child items in the current directory (represented by the dot \[.\]) and its subdirectories that have a <em>.txt file name extension.
+It uses the *Recurse</em> parameter to make the retrieval recursive and the Include parameter to limit the retrieval to *.txt files.
 
 The pipeline operator (|) sends the results of this command to **Move-Item**, which moves the text files to the TextFiles directory.
 
@@ -88,8 +88,8 @@ PS C:\> Move-Item "HKLM:\software\mycompany\*" "HKLM:\software\mynewcompany"
 ```
 
 This command moves the registry keys and values within the MyCompany registry key in HKLM\Software to the MyNewCompany key.
-The wildcard character (*) indicates that the contents of the MyCompany key should be moved, not the key itself.
-In this command, the optional *Path* and *Destination* parameter names are omitted.
+The wildcard character (<em>) indicates that the contents of the MyCompany key should be moved, not the key itself.
+In this command, the optional *Path</em> and *Destination* parameter names are omitted.
 
 ### Example 6: Move a directory and its contents to a subdirectory of the specified directory
 ```

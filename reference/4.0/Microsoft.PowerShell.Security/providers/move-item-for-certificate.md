@@ -13,7 +13,6 @@ Moves certificates from one certificate store to another certificate store.
 
 ```
 Move-Item [-Path] <string[]> [[-Destination] <string>] [-Confirm] [-WhatIf] [<CommonParameters>]
-
 ```
 
 ## Description
@@ -97,7 +96,6 @@ Description
 This command uses the Move-Item cmdlet to move a certificate from the My store to the WebHosting store.
 
 Because the command uses absolute paths, you can run it from any Windows PowerShell drive. You can also run it from a Cert: drive path and use relative paths.
-
 ```
 
 ## Example 2
@@ -110,7 +108,6 @@ Description
 This command uses the EKU parameter of the Get-ChildItem cmdlet to get SSL server authentication certificates in the MY certificate store.
 
 It uses a pipeline operator to send the certificates to the Move-Item cmdlet, which moves the certificates to the WebHosting store.
-
 ```
 
 ## See Also

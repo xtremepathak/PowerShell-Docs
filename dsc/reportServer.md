@@ -6,15 +6,15 @@ title:  Using a DSC report server
 # Using a DSC report server
 
 > Applies To: Windows PowerShell 5.0
-
+> 
 > [!IMPORTANT]
 > The Pull Server (Windows Feature *DSC-Service*) is a supported component of Windows Server
 > however there are no plans to offer new features or capabilities. It is recommended to
 > begin transitioning managed clients to [Azure Automation DSC](/azure/automation/automation-dsc-getting-started)
 > (includes features beyond Pull Server on Windows Server) or one of the community solutions
 > listed [here](pullserver.md#community-solutions-for-pull-service).
-
->**Note:** The report server described in this topic is not available in PowerShell 4.0.
+> 
+> **Note:** The report server described in this topic is not available in PowerShell 4.0.
 
 The Local Configuration Manager (LCM) of a node can be configured to send reports about its configuration status to a pull server, which can then be queried to retrieve that data. Each time the node checks and applies
 a configuration, it sends a report to the report server. These reports are stored in a database on the server, and can be retrieved by calling the reporting web service. Each report contains

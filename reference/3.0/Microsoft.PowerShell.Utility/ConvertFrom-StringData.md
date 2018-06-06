@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -80,7 +80,6 @@ TypeName: System.Collections.Hashtable
 Name              MemberType            Definition
 ----              ----------            ----------
 Add               Method                System.Void Add(Object key, Object
-
 ```
 
 These commands demonstrate that ConvertFrom-StringData actually converts a here-string to a hash table.

@@ -87,7 +87,7 @@ You can configure the PowerShell Module Logging policy using Group Policy.
 3. Double click on **Turn on Module Logging**
 4. Click **Enabled**
 5. In the Options section, click on **Show** next to Module Names
-6. Type "**\***" in the pop up window. This instructs PowerShell to log commands from all modules.
+6. Type "**\\***" in the pop up window. This instructs PowerShell to log commands from all modules.
 7. Click **OK** to set the policy
 8. Double click on **Turn on PowerShell Script Block Logging**
 9. Click **Enabled**

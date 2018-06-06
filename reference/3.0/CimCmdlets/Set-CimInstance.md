@@ -319,8 +319,8 @@ The URI is used to identify a specific type of resource, such as disks or proces
 A URI consists of a prefix and a path to a resource.
 For example: 
 
- HYPERLINK "http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/Win32_LogicalDisk" http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/Win32_LogicalDisk
- HYPERLINK "http://intel.com/wbem/wscim/1/amt-schema/1/AMT_GeneralSettings" http://intel.com/wbem/wscim/1/amt-schema/1/AMT_GeneralSettings
+ HYPERLINK "<http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/Win32_LogicalDisk>" <http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/Win32_LogicalDisk>
+ HYPERLINK "<http://intel.com/wbem/wscim/1/amt-schema/1/AMT_GeneralSettings>" http://intel.com/wbem/wscim/1/amt-schema/1/AMT_GeneralSettings
 
 
                         

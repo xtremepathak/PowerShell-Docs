@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/12/2017
 contributor:  JKeithB
 keywords:  gallery,powershell,cmdlet,psgallery
@@ -11,10 +11,10 @@ This document is a recommended dispute resolution process for community members 
 ## Process
 
 1. Contact the owners of the item you have the dispute with using the **Contact Owners** link on the item details page.
-Explain your issue in a kind and direct manner.
+   Explain your issue in a kind and direct manner.
 2. Send a copy of your message to [cgadmin@microsoft.com](mailto:cgadmin@microsoft.com) so that PowerShell Gallery Administrators are aware of your dispute.
 3. Wait a maximum of 30 days and if you don’t have resolution notify [cgadmin@microsoft.com](mailto:cgadmin@microsoft.com) again.
-The PowerShellGallery.com support team will get involved and try to work this out.
+   The PowerShellGallery.com support team will get involved and try to work this out.
 
 
 ## Prohibited Use

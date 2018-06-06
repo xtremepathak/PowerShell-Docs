@@ -426,11 +426,11 @@ You cannot pipe input to this cmdlet.
 
   If a scheduled job does not run, use the following methods to find the reason.
 
-- Verify that the job trigger is set properly.
- --  Verify that the conditions set in the job options are satisfied.
-- Verify that the user account under which the job runs has permission to run the commands or scripts in the job.
- --  Check the Task Scheduler history for errors
--  Check the Task Scheduler event log for errors.
+* Verify that the job trigger is set properly.
+  --  Verify that the conditions set in the job options are satisfied.
+* Verify that the user account under which the job runs has permission to run the commands or scripts in the job.
+  --  Check the Task Scheduler history for errors
+* Check the Task Scheduler event log for errors.
 
 For more information, see about_Scheduled_Jobs_Troubleshooting.
 

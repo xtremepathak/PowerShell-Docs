@@ -269,8 +269,8 @@ Accept wildcard characters: False
 
 ### -Name
 Specifies friendly names of jobs that this cmdlet stops.
-Enter the job names in a comma-separated list or use wildcard characters (*) to enter a job name pattern.
-By default, **Stop-Job** stops all jobs created in the current session.
+Enter the job names in a comma-separated list or use wildcard characters (<em>) to enter a job name pattern.
+By default, **Stop-Job</em>* stops all jobs created in the current session.
 
 Because the friendly name is not guaranteed to be unique, use the *WhatIf* and *Confirm* parameters when stopping jobs by name.
 

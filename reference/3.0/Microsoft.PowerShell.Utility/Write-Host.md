@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  11/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
 -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,
 -WarningAction, and -WarningVariable. For more information, see
-[about_CommonParameters](..\Microsoft.PowerShell.Core\About\about_CommonParameters.md).
+[about_CommonParameters](../Microsoft.PowerShell.Core/About/about_CommonParameters.md).
 
 ## INPUTS
 

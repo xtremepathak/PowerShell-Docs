@@ -78,38 +78,38 @@ There are two workarounds for this issue depending on the version of Windows Ser
   5. Install all available important Windows Updates, and begin Sysyprep operation normally.
 
 - For systems running **Windows Server 2012**
-  1.	After installing WMF 5.0 on the server to be Sysprep’d, login as administrator.
-  2.	Copy Generize.xml from directory \Windows\System32\Sysprep\ActionFiles\ to a location outside of the Windows directory, C:\ for example.
-  3.	Open your Generalize.xml copy with notepad.
-  4.	Find and remove the following text, one instance of each needs to be deleted (they will be near the end of the document).
+  1. After installing WMF 5.0 on the server to be Sysprep’d, login as administrator.
+  2. Copy Generize.xml from directory \Windows\System32\Sysprep\ActionFiles\ to a location outside of the Windows directory, C:\ for example.
+  3. Open your Generalize.xml copy with notepad.
+  4. Find and remove the following text, one instance of each needs to be deleted (they will be near the end of the document).
 
-    ```
-    <sysprepOrder order="0x3200"></sysprepOrder>
-    <sysprepOrder order="0x3300"></sysprepOrder>
-    ```
+     ```
+     <sysprepOrder order="0x3200"></sysprepOrder>
+     <sysprepOrder order="0x3300"></sysprepOrder>
+     ```
 
-  5.	Save the edited copy of Generalize.xml and close the file.
-  6.	Open a command prompt as administrator
-  7.	Run the following command to take ownership of the Generalize.xml file in system32 folder:
+  5. Save the edited copy of Generalize.xml and close the file.
+  6. Open a command prompt as administrator
+  7. Run the following command to take ownership of the Generalize.xml file in system32 folder:
 
-    ```
-    Takeown /f C:\Windows\System32\Sysprep\ActionFiles\Generalize.xml
-    ```
+     ```
+     Takeown /f C:\Windows\System32\Sysprep\ActionFiles\Generalize.xml
+     ```
 
-  8.	Run the following command to set appropriate permission on the file:
+  8. Run the following command to set appropriate permission on the file:
 
-    ```
-    Cacls C:\Windows\System32\ Sysprep\ActionFiles\Generalize.xml /G `<AdministratorUserName>`:F
-    ```
-      * Answer Yes at the prompt for confirmation.
-      * Note that `<AdministratorUserName>` should be replaced by the username who is administrator on the machine. For example, "Administrator".
+     ```
+     Cacls C:\Windows\System32\ Sysprep\ActionFiles\Generalize.xml /G `<AdministratorUserName>`:F
+     ```
+     * Answer Yes at the prompt for confirmation.
+     * Note that `<AdministratorUserName>` should be replaced by the username who is administrator on the machine. For example, "Administrator".
 
-  9.	Copy the file you edited and saved over to the Sysprep directory using the following command:
+  9. Copy the file you edited and saved over to the Sysprep directory using the following command:
 
-    ```
-    xcopy C:\Generalize.xml C:\Windows\System32\Sysprep\ActionFiles\Generalize.xml
-    ```
-      * Answer Yes to overwrite (note that if there is no prompt to overwrite, double check the path entered).
-      * Assumes your edited copy of Generalize.xml was copied to C:\ .
+     ```
+     xcopy C:\Generalize.xml C:\Windows\System32\Sysprep\ActionFiles\Generalize.xml
+     ```
+     * Answer Yes to overwrite (note that if there is no prompt to overwrite, double check the path entered).
+     * Assumes your edited copy of Generalize.xml was copied to C:\ .
 
-  10.	Generalize.xml is now updated with the workaround. Please run Sysprep with the generalize option enabled.
+  10. Generalize.xml is now updated with the workaround. Please run Sysprep with the generalize option enabled.

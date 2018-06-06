@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -210,7 +210,7 @@ Otherwise, it does not generate any output.
 ## NOTES
 
 - Events, event subscriptions, and the event queue exist only in the current session. If you close the current session, the event queue is discarded and the event subscription is canceled.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Get-Event](Get-Event.md)
 

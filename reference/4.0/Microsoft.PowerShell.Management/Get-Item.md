@@ -107,8 +107,8 @@ You can use Get-Item with the Windows PowerShell Registry provider to get regist
 PS C:\> get-item c:\Windows\*.* -exclude w*
 ```
 
-This command gets items in the Windows directory with names that include a dot (.), but do not begin with w*.
-This command works only when the path includes a wildcard character (*) to specify the contents of the item.
+This command gets items in the Windows directory with names that include a dot (.), but do not begin with w<em>.
+This command works only when the path includes a wildcard character (</em>) to specify the contents of the item.
 
 ## PARAMETERS
 

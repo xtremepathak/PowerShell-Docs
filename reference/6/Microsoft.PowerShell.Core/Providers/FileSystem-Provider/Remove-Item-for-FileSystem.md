@@ -14,7 +14,6 @@ Deletes files and folders.
 
 ```
 Remove-Item [-Stream <string>] [<CommonParameters>]
-
 ```
 
 ## Description
@@ -96,7 +95,6 @@ The second command uses the Stream dynamic parameter of the Remove-Item cmdlet t
 The third command uses the Stream dynamic parameter of the Get-Item cmdlet to verify that the Zone.Identifier stream is deleted.
 
 The fourth command Get-Item cmdlet without the Stream parameter to verify that the file is not deleted.
-
 ```
 
 ## Example 2
@@ -107,7 +105,6 @@ C:\PS>Remove-Item C:\Test\*.*
 Description
 -----------
 This command deletes all of the files with names that include a dot (.) from the C:\Test directory. Because the command specifies a dot, the command does not delete directories or files with no file name extension.
-
 ```
 
 ## Example 3
@@ -118,7 +115,6 @@ C:\PS>Remove-Item * -Include *.doc -Exclude *1*
 Description
 -----------
 This command deletes from the current directory all files with a .doc file name extension and a name that does not include "1". It uses the wildcard character (*) to specify the contents of the current directory. It uses the Include and Exclude parameters to specify the files to delete.
-
 ```
 
 ## Example 4
@@ -129,7 +125,6 @@ C:\PS>Remove-Item -Path C:\Test\hidden-RO-file.txt -Force
 Description
 -----------
 This command deletes a file that is both hidden and read-only. It uses the Path parameter to specify the file. It uses the Force parameter to give permission to delete it. Without Force, you cannot delete read-only or hidden files.
-
 ```
 
 ## Example 5
@@ -146,7 +141,6 @@ Because the Recurse parameter in this cmdlet is faulty, the command uses the Get
 In the Get-ChildItem command, the Path parameter has a value of *, which represents the contents of the current directory. It uses the Include parameter to specify the CSV file type, and it uses the Recurse parameter to make the retrieval recursive.
 
 If you try to specify the file type in the path, such as "-path *.csv", the cmdlet interprets the subject of the search to be a file that has no child items, and Recurse fails.
-
 ```
 
 ## See Also

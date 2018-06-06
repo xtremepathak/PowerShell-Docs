@@ -14,7 +14,6 @@ Replaces the contents of a file with contents that you specify.
 
 ```
 Set-Content [-Encoding {<Unknown> | <String> | <Unicode> | <Byte> | <BigEndianUnicode> | <UTF8> | <UTF7> | <UTF32> | <Ascii> | <Default> | <Oem>}] [-Force] [-Stream <string>] [-Confirm] [-WhatIf] [<CommonParameters>]
-
 ```
 
 ## Description
@@ -124,7 +123,6 @@ C:\PS>Set-Content -Path C:\Test1\test*.txt -Value "Hello, World"
 Description
 -----------
 This command replaces the contents of all files in the Test1 directory that have names beginning with "test" with "Hello, World". This example shows how to specify content by typing it in the command.
-
 ```
 
 ## Example 2
@@ -137,7 +135,6 @@ Description
 This command creates a comma-separated variable-length (csv) file that contains only the current date and time. It uses the Get-Date cmdlet to get the current system date and time. The pipeline operator passes the result to Set-Content, which creates the file and writes the content.
 
 If the Test1 directory does not exist, the command fails, but if the file does not exist, the command will create it.
-
 ```
 
 ## Example 3
@@ -154,7 +151,6 @@ It uses the Get-Content cmdlet to get the content of Notice.txt. The pipeline op
 Another pipeline operator sends the changed content to Set-Content which replaces the text in Notice.txt with the new content.
 
 The parentheses around the Get-Content command ensure that the Get operation is complete before the Set operation begins. Without them, the command will fail because the two functions will be trying to access the same file.
-
 ```
 
 ## Example 4
@@ -167,7 +163,6 @@ Description
 This command replaces the contents of the final.xml file with the contents of the test.xml file.
 
 The command uses the Force parameter so that the command is successful even if the Final.xml file is read-only. It uses the Encoding dynamic parameter to specify an encoding of UTF-8.
-
 ```
 
 ## See Also

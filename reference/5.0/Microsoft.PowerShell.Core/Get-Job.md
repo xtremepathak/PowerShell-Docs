@@ -109,7 +109,7 @@ PS C:\> Get-Job -Command "*get-process*"
 
 This command gets the jobs on the system that include a Get-Process command.
 The command uses the *Command* parameter of **Get-Job** to limit the jobs retrieved.
-The command uses wildcard characters (*) to get jobs that include a **Get-Process** command anywhere in the command string.
+The command uses wildcard characters (<em>) to get jobs that include a **Get-Process</em>* command anywhere in the command string.
 
 ### Example 4: Get jobs that include a specific command by using the pipeline
 ```

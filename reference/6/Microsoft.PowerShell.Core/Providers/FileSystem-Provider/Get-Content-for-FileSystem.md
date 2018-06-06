@@ -14,7 +14,6 @@ Gets the contents of a file.
 
 ```
 Get-Content [-Delimiter <string>] [-Encoding {<Unknown> | <String> | <Unicode> | <Byte> | <BigEndianUnicode> | <UTF8> | <UTF7> | <UTF32> | <Ascii> | <Default> | <Oem>}] [-Force] [-Raw <switch>] [-Stream <string>] [-Wait] [<CommonParameters>]
-
 ```
 
 ## Description
@@ -155,7 +154,6 @@ Description
 This command gets the content of the Chapter1.txt file and displays it in the console. It uses the Path parameter to specify the name of the item.
 
 Get-Content actually passes the content down the pipeline, but because there are no other cmdlets in the pipeline, Windows PowerShell formats the contents and displays it in the console.
-
 ```
 
 ## Example 2
@@ -168,7 +166,6 @@ Description
 This command gets the first 50 lines of the Log060912.txt file and stores them in the sample.txt file.
 
 The command uses the Get-Content cmdlet to get the text in the file. (The name of Path parameter, which is optional, is omitted.) The TotalCount parameter limits the retrieval to the first 50 lines. The pipeline operator (|) sends the result to Set-Content, which places it in the sample.txt file.
-
 ```
 
 ## Example 3
@@ -179,7 +176,6 @@ C:\PS>(Get-Content Cmdlets.txt -TotalCount 5)[-1]
 Description
 -----------
 This command gets the fifth line of the Cmdlets.txt text file. It uses the TotalCount parameter to get the first five lines and then uses array notation to get the last line (indicated by "-1") of the resulting set.
-
 ```
 
 ## Example 4
@@ -192,7 +188,6 @@ Description
 This command gets the contents of all CSV files in the DataSets subdirectory. It uses the Force parameter to get all files, including hidden files, and the Encoding parameter to specify the file encoding.
 
 The command also uses the Delimiter parameter to divide the returned content into sets,  each of which ends at the CSV file row that contains the "*----*" marker.
-
 ```
 
 ## Example 5
@@ -208,7 +203,6 @@ Description
 This command uses the Stream parameter to get the content of the Zone.Identifier alternate data stream. The output includes Zone ID value of 3, which represents the Internet.
 
 The Stream parameter is introduced in Windows PowerShell 3.0.
-
 ```
 
 ## Example 6
@@ -251,7 +245,6 @@ The second command uses the Invoke-Expression cmdlet to run a Get-Content comman
 The third command gets the hash table in the Hash variable. The contents is returned as a collection of name-value pairs.
 
 The fourth command uses the ModuleToProcess property of the hash table to get the value of the ModuleToProcess key in the module manifest.
-
 ```
 
 ## Example 7
@@ -286,7 +279,6 @@ The third and fourth commands show the same sequence without the ReadCount param
 The third command uses the Encoding dynamic parameter of the Get-Content cmdlet to get the contents of the Download.zip file and save it in the $b variable. Because the command omits the ReadCount parameter, it uses the default value of 1.
 
 The fourth command uses the Set-Content cmdlet to write the bytes in the $b variable to the Download.zip file on a file share. Because the content is a collection of objects, rather than a single object that contains a byte array, the command fails.
-
 ```
 
 ## See Also

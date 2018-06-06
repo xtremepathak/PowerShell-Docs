@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -36,14 +36,14 @@ For more information, see the description of the **SkipNetworkProfileCheck** par
 The **Enable-PSRemoting** cmdlet performs the following operations:
 
 - Runs the [Set-WSManQuickConfig](../Microsoft.WsMan.Management/Set-WSManQuickConfig.md) cmdlet, which performs the following tasks:
- - Starts the WinRM service.
- - Sets the startup type on the WinRM service to Automatic.
- - Creates a listener to accept requests on any IP address.
- - Enables a firewall exception for WS-Management communications.
- - Registers the Microsoft.PowerShell and Microsoft.PowerShell.Workflow session configurations, if it they are not already registered.
- - Registers the Microsoft.PowerShell32 session configuration on 64-bit computers, if it is not already registered.
- - Enables all session configurations.
- - Changes the security descriptor of all session configurations to allow remote access.
+  - Starts the WinRM service.
+  - Sets the startup type on the WinRM service to Automatic.
+  - Creates a listener to accept requests on any IP address.
+  - Enables a firewall exception for WS-Management communications.
+  - Registers the Microsoft.PowerShell and Microsoft.PowerShell.Workflow session configurations, if it they are not already registered.
+  - Registers the Microsoft.PowerShell32 session configuration on 64-bit computers, if it is not already registered.
+  - Enables all session configurations.
+  - Changes the security descriptor of all session configurations to allow remote access.
 - Restarts the WinRM service to make the preceding changes effective.
 
 To run this cmdlet, start Windows PowerShell with the "Run as administrator" option.

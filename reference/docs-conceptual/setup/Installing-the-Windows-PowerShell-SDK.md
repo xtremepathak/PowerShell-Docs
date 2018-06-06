@@ -23,7 +23,7 @@ In addition, Windows PowerShell 3.0 is backwards-compatible with the Windows Pow
 For more information on how to download the Windows PowerShell 2.0 SDK, see below.
 (Note that while the 2.0 code samples are compatible with Windows 8 and Windows PowerShell 3.0, you cannot install Windows PowerShell 2.0 on a Windows 8 platform.)
 
-##Installing Windows PowerShell 3.0 SDK for Windows 7 and Windows Server 2008 R2
+## Installing Windows PowerShell 3.0 SDK for Windows 7 and Windows Server 2008 R2
 
 Windows 7 and Windows Server 2008 R2 automatically have PowerShell 2.0 installed.
 In addition, you can install PowerShell 3.0 on these systems.

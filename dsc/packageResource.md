@@ -28,6 +28,7 @@ Package [string] #ResourceName
 ```
 
 ## Properties
+
 |  Property  |  Description   |
 |---|---|
 | Name| Indicates the name of the package for which you want to ensure a specific state.|

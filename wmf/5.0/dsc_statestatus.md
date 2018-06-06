@@ -16,18 +16,19 @@ The representation of LCM state and DSC operation status are revisited and unifi
 
 The table below illustrates the resultant state and status related properties under a few typical scenarios.
 
-| Scenario                    | LCMState       | Status | Reboot Requested  | ResourcesInDesiredState  | ResourcesNotInDesiredState |
-|---------------------------------|----------------------|------------|---------------|------------------------------|--------------------------------|
-| S**^**                          | Idle                 | Success    | $false        | S                            | $null                          |
-| F**^**                          | PendingConfiguration | Failure    | $false        | $null                        | F                              |
-| S,F                             | PendingConfiguration | Failure    | $false        | S                            | F                              |
-| F,S                             | PendingConfiguration | Failure    | $false        | S                            | F                              |
-| S<sub>1</sub>, F, S<sub>2</sub> | PendingConfiguration | Failure    | $false        | S<sub>1</sub>, S<sub>2</sub> | F                              |
-| F<sub>1</sub>, S, F<sub>2</sub> | PendingConfiguration | Failure    | $false        | S                            | F<sub>1</sub>, F<sub>2</sub>   |
-| S, r                            | PendingReboot        | Success    | $true         | S                            | r                              |
-| F, r                            | PendingReboot        | Failure    | $true         | $null                        | F, r                           |
-| r, S                            | PendingReboot        | Success    | $true         | $null                        | r                              |
-| r, F                            | PendingReboot        | Success    | $true         | $null                        | r                              |
+
+|            Scenario             |       LCMState       | Status  | Reboot Requested |   ResourcesInDesiredState    |  ResourcesNotInDesiredState  |
+|---------------------------------|----------------------|---------|------------------|------------------------------|------------------------------|
+|       S<strong>^</strong>       |         Idle         | Success |      $false      |              S               |            $null             |
+|       F<strong>^</strong>       | PendingConfiguration | Failure |      $false      |            $null             |              F               |
+|               S,F               | PendingConfiguration | Failure |      $false      |              S               |              F               |
+|               F,S               | PendingConfiguration | Failure |      $false      |              S               |              F               |
+| S<sub>1</sub>, F, S<sub>2</sub> | PendingConfiguration | Failure |      $false      | S<sub>1</sub>, S<sub>2</sub> |              F               |
+| F<sub>1</sub>, S, F<sub>2</sub> | PendingConfiguration | Failure |      $false      |              S               | F<sub>1</sub>, F<sub>2</sub> |
+|              S, r               |    PendingReboot     | Success |      $true       |              S               |              r               |
+|              F, r               |    PendingReboot     | Failure |      $true       |            $null             |             F, r             |
+|              r, S               |    PendingReboot     | Success |      $true       |            $null             |              r               |
+|              r, F               |    PendingReboot     | Success |      $true       |            $null             |              r               |
 
 ^
 S<sub>i</sub>: A series of resources that applied successfully

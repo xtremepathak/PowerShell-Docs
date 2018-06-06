@@ -287,7 +287,7 @@ Otherwise, it does not generate any output.
 ## NOTES
 * This cmdlet uses the Win32Shutdown method of the Win32_OperatingSystem WMI class.
 * In Windows PowerShell 2.0, the **AsJob** parameter does not work reliably when you are restarting/stopping remote computers. In Windows PowerShell 3.0, the implementation is changed to resolve this problem.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Add-Computer](Add-Computer.md)
 

@@ -143,29 +143,29 @@ This cmdlet does not generate any output.
 ## NOTES
 * This cmdlet cannot delete the following default groups:
 
-- Administrators
-- Backup Operators
-- Cryptographic Operators
-- Distributed COM Users
-- Event Log Readers
-- Guests
-- Hyper-V Administrators
-- IIS_IUSRS
-- Network Configuration Operators
-- Performance Log Users
-- Performance Monitor Users
-- Power Users
-- Remote Desktop Users
-- Remote Management Users
-- Replicator
-- Users
-- WinRMRemoteWMIUsers__
+* Administrators
+* Backup Operators
+* Cryptographic Operators
+* Distributed COM Users
+* Event Log Readers
+* Guests
+* Hyper-V Administrators
+* IIS_IUSRS
+* Network Configuration Operators
+* Performance Log Users
+* Performance Monitor Users
+* Power Users
+* Remote Desktop Users
+* Remote Management Users
+* Replicator
+* Users
+* WinRMRemoteWMIUsers__
 * The **PrincipalSource** property is a property on **LocalUser**, **LocalGroup**, and **LocalPrincipal** objects that describes the source of the object. The possible sources are as follows:
 
-- Local
-- Active Directory
-- Azure Active Directory group
-- Microsoft Account
+* Local
+* Active Directory
+* Azure Active Directory group
+* Microsoft Account
 
 **PrincipalSource** is supported only by Windows 10, Windows Server 2016, and later versions of the Windows operating system. For earlier versions, the property is blank.
 

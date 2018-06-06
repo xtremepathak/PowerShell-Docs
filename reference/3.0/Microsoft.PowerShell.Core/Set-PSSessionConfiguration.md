@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -169,7 +169,7 @@ This example shows different ways of viewing the results of a **Set-PSSessionCon
 
 ### -ApplicationBase
 
-Specifies the path to the assembly file (*.dll) that is specified in the value of the **AssemblyName** parameter.
+Specifies the path to the assembly file (<em>.dll) that is specified in the value of the **AssemblyName</em>* parameter.
 
 ```yaml
 Type: String

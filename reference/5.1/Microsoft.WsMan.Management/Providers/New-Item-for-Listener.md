@@ -14,7 +14,6 @@ Creates a new item.
 
 ```
 New-Item -Address <string> -Transport <string> [-Hostname <string>] [-Enabled] [-URLPrefix <string>] [-CertificateThumbprint <string>] [-Confirm] [-WhatIf] [<CommonParameters>]
-
 ```
 
 ## Description
@@ -140,7 +139,6 @@ New-Item -Address <string> -Transport <string> [-Hostname <string>] [-Enabled] [
 C:\PS>New-Item -Path WSMan:\localhost\Listener -Address * -Transport HTTP -force
 
 This command creates an HTTP listener on any IP address on the computer.
-
 ```
 
 ## See Also

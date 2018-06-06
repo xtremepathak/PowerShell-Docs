@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 keywords:  powershell
@@ -80,65 +80,66 @@ In some cases, there are similar but perhaps less ideal options listed beside th
 It is a best practice to use the Preferred Tag, as that will result in less noise, and better search results for consumers.
 
 
-| **Preferred tag** | **Alternatives and notes** |
-| --- | --- |
-| **Azure** |  |
-| **DSC** | DesiredStateConfiguration is less desirable, it’s too long |
-| **ResourceManager** | ARM is used to describe group of processors, and should not be used for Azure Resource Manager | **DSCResourceKit** |  |
-| **SQL** |  |
-| **AWS** |  |
-| **DSCResource** |  |
-| **Automation** |  |
-| **REST** |  |
-| **ActiveDirectory** | AD is not currently used by itself  |
-| **SQLServer** |  |
-| **DBA** |  |
-| **Security** | Defense is less precise |
-| **Database** | Databases (plural) is less desirable |
-| **DevOps** |  |
-| **Windows** |  |
-| **Build** |  |
-| **Deployment** | Deploy is used somewhat less often |
-| **Cloud** |  |
-| **GIT** |  |
-| **Test** | Testing is less desirable |
-| **VersionControl** | Version is less precise, although used more frequently  |
-| **Logging** | Preferred use of logging as an action |
-| **Log** | Preferred use of Log as a thing |
-| **Backup** |  |
-| **IaaS** |  |
-| **Linux** |  |
-| **IIS** |  |
-| **AzureAutomation** |  |
-| **Storage** |  |
-| **GitHub** |  |
-| **Json** |  |
-| **Exchange** |  |
-| **Network** | Networking is similar, less often used |
-| **SharePoint** |  |
-| **Reporting** | Reporting is an action, report is a thing |
-| **Report** | Report is a thing |
-| **WinRM** |  |
-| **Monitoring** |  |
-| **VSTS** |  |
-| **Excel** |  |
-| **Google** |  |
-| **Color** |  |
-| **DNS** |  |
-| **Office365** | Spelling out Office is preferable. O365 is less commonly used, although shorter | **Gitlab** |  |
-| **Pester** |  |
-| **AzureAD** |  |
-| **HTML** |  |
-| **Hyper-V** | HyperV is less common as a tag |
-| **Configuration** |  |
-| **ChatOps** |  |
-| **PackageManagement** |  |
-| **WMI** |  |
-| **Firewall** |  |
-| **Docker** |  |
-| **Appveyor** |  |
-| **AzureRm** | Used primarily for the AzureRM modules |
-| **Zip** |  |
-| **MSI** |  |
-| **Mac** |  |
-| **PoshBot** |  |
+|   **Preferred tag**   |                                   **Alternatives and notes**                                   |
+|-----------------------|------------------------------------------------------------------------------------------------|
+|       **Azure**       |                                                                                                |
+|        **DSC**        |                   DesiredStateConfiguration is less desirable, it’s too long                   |
+|  **ResourceManager**  | ARM is used to describe group of processors, and should not be used for Azure Resource Manager |
+|        **SQL**        |                                                                                                |
+|        **AWS**        |                                                                                                |
+|    **DSCResource**    |                                                                                                |
+|    **Automation**     |                                                                                                |
+|       **REST**        |                                                                                                |
+|  **ActiveDirectory**  |                               AD is not currently used by itself                               |
+|     **SQLServer**     |                                                                                                |
+|        **DBA**        |                                                                                                |
+|     **Security**      |                                    Defense is less precise                                     |
+|     **Database**      |                              Databases (plural) is less desirable                              |
+|      **DevOps**       |                                                                                                |
+|      **Windows**      |                                                                                                |
+|       **Build**       |                                                                                                |
+|    **Deployment**     |                               Deploy is used somewhat less often                               |
+|       **Cloud**       |                                                                                                |
+|        **GIT**        |                                                                                                |
+|       **Test**        |                                   Testing is less desirable                                    |
+|  **VersionControl**   |                     Version is less precise, although used more frequently                     |
+|      **Logging**      |                             Preferred use of logging as an action                              |
+|        **Log**        |                                Preferred use of Log as a thing                                 |
+|      **Backup**       |                                                                                                |
+|       **IaaS**        |                                                                                                |
+|       **Linux**       |                                                                                                |
+|        **IIS**        |                                                                                                |
+|  **AzureAutomation**  |                                                                                                |
+|      **Storage**      |                                                                                                |
+|      **GitHub**       |                                                                                                |
+|       **Json**        |                                                                                                |
+|     **Exchange**      |                                                                                                |
+|      **Network**      |                             Networking is similar, less often used                             |
+|    **SharePoint**     |                                                                                                |
+|     **Reporting**     |                           Reporting is an action, report is a thing                            |
+|      **Report**       |                                       Report is a thing                                        |
+|       **WinRM**       |                                                                                                |
+|    **Monitoring**     |                                                                                                |
+|       **VSTS**        |                                                                                                |
+|       **Excel**       |                                                                                                |
+|      **Google**       |                                                                                                |
+|       **Color**       |                                                                                                |
+|        **DNS**        |                                                                                                |
+|     **Office365**     |        Spelling out Office is preferable. O365 is less commonly used, although shorter         |
+|      **Pester**       |                                                                                                |
+|      **AzureAD**      |                                                                                                |
+|       **HTML**        |                                                                                                |
+|      **Hyper-V**      |                                 HyperV is less common as a tag                                 |
+|   **Configuration**   |                                                                                                |
+|      **ChatOps**      |                                                                                                |
+| **PackageManagement** |                                                                                                |
+|        **WMI**        |                                                                                                |
+|     **Firewall**      |                                                                                                |
+|      **Docker**       |                                                                                                |
+|     **Appveyor**      |                                                                                                |
+|      **AzureRm**      |                             Used primarily for the AzureRM modules                             |
+|        **Zip**        |                                                                                                |
+|        **MSI**        |                                                                                                |
+|        **Mac**        |                                                                                                |
+|      **PoshBot**      |                                                                                                |
+

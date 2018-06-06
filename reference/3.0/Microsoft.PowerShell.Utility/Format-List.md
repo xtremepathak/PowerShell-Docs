@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -227,8 +227,8 @@ Sends errors through the pipeline.
 This parameter is rarely used, but can be used as a debugging aid when you are formatting expressions in a Format-List command, and the expressions do not appear to be working.
 The following shows an example of the results of adding the ShowError parameter with an expression.
 
-PS \> Get-Date | Format-List DayOfWeek,{ $_ / $null } -ShowError
-DayOfWeek  $_ / $null
+PS \> Get-Date | Format-List DayOfWeek,{ $<em> / $null } -ShowError
+DayOfWeek  $</em> / $null
 --------- ------------
 Wednesday
 
@@ -285,17 +285,17 @@ Format-List returns the format objects that represent the list.
 - You can also refer to Format-List by its built-in alias, "FL". For more information, see about_Aliases.
 
   The format cmdlets, such as Format-List, arrange the data to be displayed but do not display it.
-The data is displayed by the output features of Windows PowerShell and by the cmdlets that contain the Out verb (the Out cmdlets), such as Out-Host, Out-File, and Out-Printer.
+  The data is displayed by the output features of Windows PowerShell and by the cmdlets that contain the Out verb (the Out cmdlets), such as Out-Host, Out-File, and Out-Printer.
 
   If you do not use a format cmdlet, Windows PowerShell applies that default format for each object that it displays.
 
   The GroupBy parameter assumes that the objects are sorted.
-Before using Format-Custom to group the objects, use Sort-Object to sort them.
+  Before using Format-Custom to group the objects, use Sort-Object to sort them.
 
   The View parameter lets you specify an alternate format for the table.
-You can use the views defined in the *.format.PS1XML files in the Windows PowerShell directory, or you can create your own views in new PS1XML files and use the Update-FormatData cmdlet to include them in Windows PowerShell.
+  You can use the views defined in the *.format.PS1XML files in the Windows PowerShell directory, or you can create your own views in new PS1XML files and use the Update-FormatData cmdlet to include them in Windows PowerShell.
 
   The alternate view for the View parameter must use the list format; if not, the command fails.
-If the alternate view is a table, use Format-Table.
-If the alternate view is neither a list nor a table, use Format-Custom.
-## RELATED LINKS
+  If the alternate view is a table, use Format-Table.
+  If the alternate view is neither a list nor a table, use Format-Custom.
+  ## RELATED LINKS

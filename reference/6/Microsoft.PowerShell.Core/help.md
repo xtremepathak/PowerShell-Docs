@@ -596,13 +596,13 @@ If you do not have help files for the primary or fallback locale, Get-Help * beh
 To get help for a different locale, use Region and Language in Control Panel to change the settings.
 
 * The full view of help includes a table of information about the parameters. The table includes the following fields:
-- Required. Indicates whether the parameter is required (true) or optional (false).
-- Position. Indicates whether the parameter is named or positional (numbered). Positional parameters must appear in a specified place in the command.
----- "Named" indicates that the parameter name is required, but that the parameter can appear anywhere in the command.
----- \<Number\> indicates that the parameter name is optional, but when the name is omitted, the parameter must be in the place specified by the number. For example, "2" indicates that when the parameter name is omitted, the parameter must be the second (2) or only unnamed parameter in the command. When the parameter name is used, the parameter can appear anywhere in the command.
-- Default value. The parameter value that Windows PowerShell uses if you do not include the parameter in the command.
-- Accepts pipeline input. Indicates whether you can (true) or cannot (false) send objects to the parameter through a pipeline. "By Property Name" means that the pipelined object must have a property that has the same name as the parameter name.
-- Accepts wildcard characters. Indicates whether the value of a parameter can include wildcard characters, such as * and ?.
+* Required. Indicates whether the parameter is required (true) or optional (false).
+* Position. Indicates whether the parameter is named or positional (numbered). Positional parameters must appear in a specified place in the command.
+  ---- "Named" indicates that the parameter name is required, but that the parameter can appear anywhere in the command.
+  ---- \<Number\> indicates that the parameter name is optional, but when the name is omitted, the parameter must be in the place specified by the number. For example, "2" indicates that when the parameter name is omitted, the parameter must be the second (2) or only unnamed parameter in the command. When the parameter name is used, the parameter can appear anywhere in the command.
+* Default value. The parameter value that Windows PowerShell uses if you do not include the parameter in the command.
+* Accepts pipeline input. Indicates whether you can (true) or cannot (false) send objects to the parameter through a pipeline. "By Property Name" means that the pipelined object must have a property that has the same name as the parameter name.
+* Accepts wildcard characters. Indicates whether the value of a parameter can include wildcard characters, such as * and ?.
 
 ## RELATED LINKS
 

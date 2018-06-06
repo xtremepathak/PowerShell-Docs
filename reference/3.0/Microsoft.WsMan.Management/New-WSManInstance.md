@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -387,7 +387,7 @@ This cmdlet does not generate any output.
 ## NOTES
 
 - The Set-WmiInstance cmdlet, a Windows Management Instrumentation (WMI) cmdlet, is similar. Set-WmiInstance uses the DCOM connection/transport layer to create or update WMI instances.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Connect-WSMan](Connect-WSMan.md)
 

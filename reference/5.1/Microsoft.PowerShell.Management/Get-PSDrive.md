@@ -74,7 +74,6 @@ PS C:\foo> Get-PSDrive D
 Name           Used (GB)     Free (GB) Provider      Root
 ----           ---------     --------- --------      ----
 D                1211.06     123642.32 FileSystem    D:\
-
 ```
 
 This command gets the D: drive on the computer.
@@ -97,9 +96,9 @@ This includes fixed drives, logical partitions, mapped network drives, and tempo
 ### Example 4: Check to see if a drive is in use as a Windows PowerShell drive name
 ```powershell
 if (Get-PSDrive X -ErrorAction SilentlyContinue) {
-	Write-Host 'The X: drive is already in use.'
+    Write-Host 'The X: drive is already in use.'
 } else {
-	New-PSDrive -Name X -PSProvider Registry -Root HKLM:\SOFTWARE
+    New-PSDrive -Name X -PSProvider Registry -Root HKLM:\SOFTWARE
 }
 ```
 

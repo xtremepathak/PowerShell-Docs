@@ -447,7 +447,7 @@ Accept wildcard characters: False
 ```
 
 ### -Certificate
-Specifies the client certificate that is used to sign the format files (*.Format.ps1xml) or script module files (.psm1) in the temporary module that **Import-PSSession** creates.
+Specifies the client certificate that is used to sign the format files (<em>.Format.ps1xml) or script module files (.psm1) in the temporary module that **Import-PSSession</em>* creates.
 
 Enter a variable that contains a certificate or a command or expression that gets the certificate.
 

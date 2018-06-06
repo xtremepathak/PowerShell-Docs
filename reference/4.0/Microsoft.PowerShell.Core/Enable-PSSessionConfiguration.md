@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -213,7 +213,7 @@ This cmdlet does not return any objects.
 ## NOTES
 
 - To run this cmdlet on Windows Vista, Windows Server 2008, and later versions of Windows, you must start Windows PowerShell with the "Run as administrator" option.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Disable-PSSessionConfiguration](Disable-PSSessionConfiguration.md)
 

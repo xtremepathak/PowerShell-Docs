@@ -84,7 +84,7 @@ PS C:\> Get-Item C:\*
 This command gets the items in the C: drive.
 The wildcard character (*) represents all the items in the container, not just the container.
 
-In Windows PowerShell, use a single asterisk (*) to get contents, instead of the traditional *.*.
+In Windows PowerShell, use a single asterisk (<em>) to get contents, instead of the traditional *.</em>.
 The format is interpreted literally, so *.* would not retrieve directories or file names without a dot.
 
 ### Example 5: Get a property in the specified directory
@@ -109,8 +109,8 @@ You can use this cmdlet with the Windows PowerShell Registry provider to get reg
 PS C:\> Get-Item c:\Windows\*.* -exclude "w*"
 ```
 
-This command gets items in the Windows directory with names that include a dot (.), but do not begin with w*.
-This command works only when the path includes a wildcard character (*) to specify the contents of the item.
+This command gets items in the Windows directory with names that include a dot (.), but do not begin with w<em>.
+This command works only when the path includes a wildcard character (</em>) to specify the contents of the item.
 
 ## PARAMETERS
 

@@ -627,9 +627,9 @@ Otherwise, the object that **Get-WmiObject** returns depends on the value of the
 * To access WMI information on a remote computer, the cmdlet must run under an account that is a member of the local administrators group on the remote computer. Or, the default access control on the WMI namespace of the remote repository can be changed to give access rights to other accounts.
 
   Only some of the properties of each WMI class are displayed by default.
-The set of properties that is displayed for each WMI class is specified in the Types.ps1xml configuration file.
-To get all properties of a WMI object, use the Get-Member or Format-List   cmdlets.
-## RELATED LINKS
+  The set of properties that is displayed for each WMI class is specified in the Types.ps1xml configuration file.
+  To get all properties of a WMI object, use the Get-Member or Format-List   cmdlets.
+  ## RELATED LINKS
 
 [Invoke-WmiMethod](Invoke-WmiMethod.md)
 

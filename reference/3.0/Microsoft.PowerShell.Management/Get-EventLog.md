@@ -373,7 +373,7 @@ Accept wildcard characters: True
 
 ### -UserName
 Gets only the events that are associated with the specified user names.
-Enter names or name patterns, such as User01, User*, or Domain01\User*.
+Enter names or name patterns, such as User01, User<em>, or Domain01\User</em>.
 Wildcards are permitted.
 
 ```yaml
@@ -404,7 +404,7 @@ If only the List parameter is specified, the output is a collection of EventLog 
 If both the List and AsString parameters are specified, the output is a collection of Strings (System.String).
 ## NOTES
 * The **Get-EventLog** and Get-WinEvent cmdlets are not supported in Windows Preinstallation Environment (Windows PE).
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Clear-EventLog](Clear-EventLog.md)
 

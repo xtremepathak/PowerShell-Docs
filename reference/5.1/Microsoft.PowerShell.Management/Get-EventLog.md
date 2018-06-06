@@ -393,7 +393,7 @@ Accept wildcard characters: False
 
 ### -UserName
 Specifies, as a string array, user names that are associated with events.
-Enter names or name patterns, such as User01, User*, or Domain01\User*.
+Enter names or name patterns, such as User01, User<em>, or Domain01\User</em>.
 Wildcards are permitted.
 
 ```yaml

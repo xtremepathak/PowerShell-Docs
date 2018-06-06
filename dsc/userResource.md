@@ -4,7 +4,7 @@ keywords:  dsc,powershell,configuration,setup
 title:  DSC User Resource
 ---
 
-#DSC User Resource#
+# DSC User Resource#
 
 
 >Applies To: Windows PowerShell 4.0, Windows PowerShell 5.0
@@ -13,7 +13,7 @@ title:  DSC User Resource
 The __User__ resource in Windows PowerShell Desired State Configuration (DSC) provides a mechanism to manage local user accounts on the target node.
 
 
-##Syntax##
+## Syntax##
 
 ```
 User [string] #ResourceName
@@ -32,6 +32,7 @@ User [string] #ResourceName
 ```
 
 ## Properties
+
 |  Property  |  Description   |
 |---|---|
 | UserName| Indicates the account name for which you want to ensure a specific state.|

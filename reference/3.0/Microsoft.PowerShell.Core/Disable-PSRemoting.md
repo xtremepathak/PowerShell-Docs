@@ -1,4 +1,4 @@
-﻿---
+---
 ms.date:  06/09/2017
 schema:  2.0.0
 locale:  en-us
@@ -307,7 +307,7 @@ This cmdlet does not return any object.
 - Disabling the session configurations does not undo all the changes made by the Enable-PSRemoting or Enable-PSSessionConfiguration cmdlets. You might have to undo the following changes manually.
 
   1.
-Stop and disable the WinRM service.
+  Stop and disable the WinRM service.
 
 2.
 Delete the listener that accepts requests on any IP address.

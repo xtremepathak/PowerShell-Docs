@@ -138,9 +138,9 @@ $R.Forms[0].Password = "MyPassword"
 Invoke-RestMethod http://website.com/service.aspx -Body $R
 ```
 - or -
-```
-PS C:\> Invoke-RestMethod http://website.com/service.aspx -Body $R.Forms[0]
-```
+  ```
+  PS C:\> Invoke-RestMethod http://website.com/service.aspx -Body $R.Forms[0]
+  ```
 
 ```yaml
 Type: Object

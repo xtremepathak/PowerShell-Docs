@@ -198,7 +198,7 @@ When you pipe an object to **Remove-TypeData**, **Remove-TypeData** gets the typ
 This cmdlet does not generate any output.
 ## NOTES
 * **Remove-TypeData** can remove only the extended type data in the current session. It cannot remove extended type data that is on the computer, but has not been added to the current session, such as extended types that are defined in modules that have not been imported into the current session.
-## RELATED LINKS
+  ## RELATED LINKS
 
 [Get-TypeData](Get-TypeData.md)
 

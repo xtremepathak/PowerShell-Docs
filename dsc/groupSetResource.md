@@ -14,7 +14,7 @@ The **GroupSet** resource in Windows PowerShell Desired State Configuration (DSC
 
 Use this resource when you want to add and/or remove the same list of members to more than one group, remove more than one group, or add more than one group with the same list of members.
 
-##Syntax##
+## Syntax##
 ```
 Group [string] #ResourceName
 {

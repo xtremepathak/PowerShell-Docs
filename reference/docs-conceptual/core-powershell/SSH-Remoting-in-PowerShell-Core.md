@@ -35,73 +35,73 @@ In addition you will need to enable password authentication and optionally key b
 ## Setup on Windows Machine
 
 1. Install the latest version of [PowerShell Core for Windows]
-    - You can tell if it has the SSH remoting support by looking at the parameter sets for New-PSSession
+   - You can tell if it has the SSH remoting support by looking at the parameter sets for New-PSSession
 
-    ```powershell
-    PS> Get-Command New-PSSession -syntax
-    New-PSSession [-HostName] <string[]> [-Name <string[]>] [-UserName <string>] [-KeyFilePath <string>] [-SSHTransport] [<CommonParameters>]
-    ```
+     ```powershell
+     PS> Get-Command New-PSSession -syntax
+     New-PSSession [-HostName] <string[]> [-Name <string[]>] [-UserName <string>] [-KeyFilePath <string>] [-SSHTransport] [<CommonParameters>]
+     ```
 
-1. Install the latest [Win32 OpenSSH] build from GitHub using the [installation] instructions
-1. Edit the sshd_config file at the location where you installed Win32 OpenSSH
-    - Make sure password authentication is enabled
+2. Install the latest [Win32 OpenSSH] build from GitHub using the [installation] instructions
+3. Edit the sshd_config file at the location where you installed Win32 OpenSSH
+   - Make sure password authentication is enabled
 
-    ```
-    PasswordAuthentication yes
-    ```
+     ```
+     PasswordAuthentication yes
+     ```
 
-    - Add a PowerShell subsystem entry, replace `c:/program files/powershell/6.0.0/pwsh.exe` with the correct path to the version you want to use
+   - Add a PowerShell subsystem entry, replace `c:/program files/powershell/6.0.0/pwsh.exe` with the correct path to the version you want to use
 
-    ```
-    Subsystem    powershell c:/program files/powershell/6.0.0/pwsh.exe -sshs -NoLogo -NoProfile
-    ```
+     ```
+     Subsystem    powershell c:/program files/powershell/6.0.0/pwsh.exe -sshs -NoLogo -NoProfile
+     ```
 
-    - Optionally enable key authentication
+   - Optionally enable key authentication
 
-    ```
-    PubkeyAuthentication yes
-    ```
+     ```
+     PubkeyAuthentication yes
+     ```
 
-1. Restart the sshd service
+4. Restart the sshd service
 
     ```powershell
     Restart-Service sshd
     ```
 
-1. Add the path where OpenSSH is installed to your Path Env Variable
+5. Add the path where OpenSSH is installed to your Path Env Variable
     - This should be along the lines of `C:\Program Files\OpenSSH\`
     - This allows for the ssh.exe to be found
 
 ## Setup on Linux (Ubuntu 14.04) Machine
 
 1. Install the latest [PowerShell for Linux] build from GitHub
-1. Install [Ubuntu SSH] as needed
+2. Install [Ubuntu SSH] as needed
 
     ```bash
     sudo apt install openssh-client
     sudo apt install openssh-server
     ```
 
-1. Edit the sshd_config file at location /etc/ssh
-    - Make sure password authentication is enabled
+3. Edit the sshd_config file at location /etc/ssh
+   - Make sure password authentication is enabled
 
-    ```
-    PasswordAuthentication yes
-    ```
+     ```
+     PasswordAuthentication yes
+     ```
 
-    - Add a PowerShell subsystem entry
+   - Add a PowerShell subsystem entry
 
-    ```
-    Subsystem powershell /usr/bin/pwsh -sshs -NoLogo -NoProfile
-    ```
+     ```
+     Subsystem powershell /usr/bin/pwsh -sshs -NoLogo -NoProfile
+     ```
 
-    - Optionally enable key authentication
+   - Optionally enable key authentication
 
-    ```
-    PubkeyAuthentication yes
-    ```
+     ```
+     PubkeyAuthentication yes
+     ```
 
-1. Restart the sshd service
+4. Restart the sshd service
 
     ```bash
     sudo service sshd restart
@@ -115,32 +115,32 @@ In addition you will need to enable password authentication and optionally key b
       - Click on `Sharing`
       - Check `Remote Login` - Should say `Remote Login: On`
       - Allow access to appropriate users
-1. Edit the `sshd_config` file at location `/private/etc/ssh/sshd_config`
-    - Use your favorite editor or
+2. Edit the `sshd_config` file at location `/private/etc/ssh/sshd_config`
+   - Use your favorite editor or
 
-    ```bash
-    sudo nano /private/etc/ssh/sshd_config
-    ```
+     ```bash
+     sudo nano /private/etc/ssh/sshd_config
+     ```
 
-    - Make sure password authentication is enabled
+   - Make sure password authentication is enabled
 
-    ```
-    PasswordAuthentication yes
-    ```
+     ```
+     PasswordAuthentication yes
+     ```
 
-    - Add a PowerShell subsystem entry
+   - Add a PowerShell subsystem entry
 
-    ```
-    Subsystem powershell /usr/local/bin/pwsh -sshs -NoLogo -NoProfile
-    ```
+     ```
+     Subsystem powershell /usr/local/bin/pwsh -sshs -NoLogo -NoProfile
+     ```
 
-    - Optionally enable key authentication
+   - Optionally enable key authentication
 
-    ```
-    PubkeyAuthentication yes
-    ```
+     ```
+     PubkeyAuthentication yes
+     ```
 
-1. Restart the sshd service
+3. Restart the sshd service
 
     ```bash
     sudo launchctl stop com.openssh.sshd

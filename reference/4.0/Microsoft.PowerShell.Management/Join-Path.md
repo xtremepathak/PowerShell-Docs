@@ -32,7 +32,7 @@ The provider supplies the path delimiters.
 PS C:\> join-path -path c:\win* -childpath System*
 ```
 
-This command uses Join-Path to combine the "c:\Win*" path with the "System*" child path.
+This command uses Join-Path to combine the "c:\Win<em>" path with the "System</em>" child path.
 The Windows PowerShell file system provider, FileSystem joins the path and adds the "\" delimiter.
 
 ### Example 2
@@ -40,7 +40,7 @@ The Windows PowerShell file system provider, FileSystem joins the path and adds 
 PS C:\> join-path c:\win* System* -resolve
 ```
 
-This command displays the files and folders that are referenced by joining the "c:\Win*" path and the "System*" child path.
+This command displays the files and folders that are referenced by joining the "c:\Win<em>" path and the "System</em>" child path.
 It displays the same files and folders as Get-ChildItem, but it displays the fully qualified path to each item.
 In this command, the Path and ChildPath optional parameter names are omitted.
 
